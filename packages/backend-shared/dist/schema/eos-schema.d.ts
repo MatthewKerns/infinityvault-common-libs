@@ -1,4 +1,3 @@
-import { z } from "zod";
 export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
     name: "eos_vision";
     schema: undefined;
@@ -12,9 +11,16 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         coreValues: import("drizzle-orm/pg-core").PgColumn<{
             name: "core_values";
             tableName: "eos_vision";
@@ -24,9 +30,16 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         coreCustomers: import("drizzle-orm/pg-core").PgColumn<{
             name: "core_customers";
             tableName: "eos_vision";
@@ -36,9 +49,16 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         niche: import("drizzle-orm/pg-core").PgColumn<{
             name: "niche";
             tableName: "eos_vision";
@@ -48,8 +68,13 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         tenYearTarget: import("drizzle-orm/pg-core").PgColumn<{
             name: "ten_year_target";
@@ -60,8 +85,13 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         marketingStrategy: import("drizzle-orm/pg-core").PgColumn<{
             name: "marketing_strategy";
@@ -72,8 +102,13 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         threeYearPicture: import("drizzle-orm/pg-core").PgColumn<{
             name: "three_year_picture";
@@ -84,8 +119,13 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         oneYearPlan: import("drizzle-orm/pg-core").PgColumn<{
             name: "one_year_plan";
@@ -96,8 +136,13 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         quarterlyTheme: import("drizzle-orm/pg-core").PgColumn<{
             name: "quarterly_theme";
@@ -108,8 +153,13 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -120,8 +170,13 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -132,8 +187,13 @@ export declare const vision: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -151,9 +211,16 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         name: import("drizzle-orm/pg-core").PgColumn<{
             name: "name";
             tableName: "eos_seats";
@@ -163,9 +230,16 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 100;
+        }>;
         accountabilityChartPosition: import("drizzle-orm/pg-core").PgColumn<{
             name: "accountability_chart_position";
             tableName: "eos_seats";
@@ -175,9 +249,16 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 100;
+        }>;
         roles: import("drizzle-orm/pg-core").PgColumn<{
             name: "roles";
             tableName: "eos_seats";
@@ -187,9 +268,16 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         responsibilities: import("drizzle-orm/pg-core").PgColumn<{
             name: "responsibilities";
             tableName: "eos_seats";
@@ -199,9 +287,16 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         kpis: import("drizzle-orm/pg-core").PgColumn<{
             name: "kpis";
             tableName: "eos_seats";
@@ -216,9 +311,21 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: {
+                name: string;
+                target: number;
+                unit: string;
+                frequency: string;
+            }[];
+        }>;
         assignedTo: import("drizzle-orm/pg-core").PgColumn<{
             name: "assigned_to";
             tableName: "eos_seats";
@@ -228,9 +335,16 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         gwd: import("drizzle-orm/pg-core").PgColumn<{
             name: "gwd";
             tableName: "eos_seats";
@@ -244,9 +358,20 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: {
+                gets: boolean;
+                wants: boolean;
+                capacity: boolean;
+            };
+        }>;
         coreValues: import("drizzle-orm/pg-core").PgColumn<{
             name: "core_values";
             tableName: "eos_seats";
@@ -256,9 +381,16 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         isActive: import("drizzle-orm/pg-core").PgColumn<{
             name: "is_active";
             tableName: "eos_seats";
@@ -268,8 +400,13 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -280,8 +417,13 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -292,8 +434,13 @@ export declare const seats: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -311,9 +458,16 @@ export declare const personalScorecards: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         seatId: import("drizzle-orm/pg-core").PgColumn<{
             name: "seat_id";
             tableName: "eos_personal_scorecards";
@@ -323,9 +477,16 @@ export declare const personalScorecards: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         weekEnding: import("drizzle-orm/pg-core").PgColumn<{
             name: "week_ending";
             tableName: "eos_personal_scorecards";
@@ -335,8 +496,13 @@ export declare const personalScorecards: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         kpiScores: import("drizzle-orm/pg-core").PgColumn<{
             name: "kpi_scores";
@@ -347,9 +513,16 @@ export declare const personalScorecards: import("drizzle-orm/pg-core").PgTableWi
             driverParam: unknown;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: Record<string, number>;
+        }>;
         notes: import("drizzle-orm/pg-core").PgColumn<{
             name: "notes";
             tableName: "eos_personal_scorecards";
@@ -359,8 +532,13 @@ export declare const personalScorecards: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -371,8 +549,13 @@ export declare const personalScorecards: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -390,9 +573,16 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         name: import("drizzle-orm/pg-core").PgColumn<{
             name: "name";
             tableName: "eos_scorecard_metrics";
@@ -402,9 +592,16 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 100;
+        }>;
         owner: import("drizzle-orm/pg-core").PgColumn<{
             name: "owner";
             tableName: "eos_scorecard_metrics";
@@ -414,9 +611,16 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         target: import("drizzle-orm/pg-core").PgColumn<{
             name: "target";
             tableName: "eos_scorecard_metrics";
@@ -426,8 +630,13 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         unit: import("drizzle-orm/pg-core").PgColumn<{
             name: "unit";
@@ -438,9 +647,16 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         frequency: import("drizzle-orm/pg-core").PgColumn<{
             name: "frequency";
             tableName: "eos_scorecard_metrics";
@@ -450,9 +666,16 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         category: import("drizzle-orm/pg-core").PgColumn<{
             name: "category";
             tableName: "eos_scorecard_metrics";
@@ -462,9 +685,16 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         formula: import("drizzle-orm/pg-core").PgColumn<{
             name: "formula";
             tableName: "eos_scorecard_metrics";
@@ -474,8 +704,13 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         isActive: import("drizzle-orm/pg-core").PgColumn<{
             name: "is_active";
@@ -486,8 +721,13 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -498,8 +738,13 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -510,8 +755,13 @@ export declare const scorecardMetrics: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -529,9 +779,16 @@ export declare const weeklyScorecard: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         weekEnding: import("drizzle-orm/pg-core").PgColumn<{
             name: "week_ending";
             tableName: "eos_weekly_scorecard";
@@ -541,8 +798,13 @@ export declare const weeklyScorecard: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         metricId: import("drizzle-orm/pg-core").PgColumn<{
             name: "metric_id";
@@ -553,9 +815,16 @@ export declare const weeklyScorecard: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         actualValue: import("drizzle-orm/pg-core").PgColumn<{
             name: "actual_value";
             tableName: "eos_weekly_scorecard";
@@ -565,8 +834,13 @@ export declare const weeklyScorecard: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         targetValue: import("drizzle-orm/pg-core").PgColumn<{
             name: "target_value";
@@ -577,8 +851,13 @@ export declare const weeklyScorecard: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         variance: import("drizzle-orm/pg-core").PgColumn<{
             name: "variance";
@@ -589,8 +868,13 @@ export declare const weeklyScorecard: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         notes: import("drizzle-orm/pg-core").PgColumn<{
             name: "notes";
@@ -601,8 +885,13 @@ export declare const weeklyScorecard: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         redFlag: import("drizzle-orm/pg-core").PgColumn<{
             name: "red_flag";
@@ -613,8 +902,13 @@ export declare const weeklyScorecard: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -625,8 +919,13 @@ export declare const weeklyScorecard: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -644,9 +943,16 @@ export declare const issueCategories: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         name: import("drizzle-orm/pg-core").PgColumn<{
             name: "name";
             tableName: "eos_issue_categories";
@@ -656,9 +962,16 @@ export declare const issueCategories: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         description: import("drizzle-orm/pg-core").PgColumn<{
             name: "description";
             tableName: "eos_issue_categories";
@@ -668,8 +981,13 @@ export declare const issueCategories: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         color: import("drizzle-orm/pg-core").PgColumn<{
             name: "color";
@@ -680,9 +998,16 @@ export declare const issueCategories: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 7;
+        }>;
         isActive: import("drizzle-orm/pg-core").PgColumn<{
             name: "is_active";
             tableName: "eos_issue_categories";
@@ -692,8 +1017,13 @@ export declare const issueCategories: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -711,9 +1041,16 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         title: import("drizzle-orm/pg-core").PgColumn<{
             name: "title";
             tableName: "eos_issues";
@@ -723,8 +1060,13 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         category: import("drizzle-orm/pg-core").PgColumn<{
             name: "category";
@@ -735,9 +1077,16 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         description: import("drizzle-orm/pg-core").PgColumn<{
             name: "description";
             tableName: "eos_issues";
@@ -747,8 +1096,13 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -759,9 +1113,16 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         impactLevel: import("drizzle-orm/pg-core").PgColumn<{
             name: "impact_level";
             tableName: "eos_issues";
@@ -771,9 +1132,16 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 10;
+        }>;
         assignedTo: import("drizzle-orm/pg-core").PgColumn<{
             name: "assigned_to";
             tableName: "eos_issues";
@@ -783,9 +1151,16 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         createdFrom: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_from";
             tableName: "eos_issues";
@@ -795,9 +1170,16 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         resolutionNotes: import("drizzle-orm/pg-core").PgColumn<{
             name: "resolution_notes";
             tableName: "eos_issues";
@@ -807,8 +1189,13 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         linksToVision: import("drizzle-orm/pg-core").PgColumn<{
             name: "links_to_vision";
@@ -819,9 +1206,16 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
             tableName: "eos_issues";
@@ -831,8 +1225,13 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -843,8 +1242,13 @@ export declare const issues: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -862,9 +1266,16 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         type: import("drizzle-orm/pg-core").PgColumn<{
             name: "type";
             tableName: "eos_meetings";
@@ -874,9 +1285,16 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         date: import("drizzle-orm/pg-core").PgColumn<{
             name: "date";
             tableName: "eos_meetings";
@@ -886,8 +1304,13 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         attendees: import("drizzle-orm/pg-core").PgColumn<{
             name: "attendees";
@@ -898,9 +1321,16 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         agenda: import("drizzle-orm/pg-core").PgColumn<{
             name: "agenda";
             tableName: "eos_meetings";
@@ -910,9 +1340,16 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         issuesDiscussed: import("drizzle-orm/pg-core").PgColumn<{
             name: "issues_discussed";
             tableName: "eos_meetings";
@@ -922,9 +1359,16 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         decisionsmade: import("drizzle-orm/pg-core").PgColumn<{
             name: "decisions_made";
             tableName: "eos_meetings";
@@ -934,9 +1378,16 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         actionItems: import("drizzle-orm/pg-core").PgColumn<{
             name: "action_items";
             tableName: "eos_meetings";
@@ -950,9 +1401,20 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: {
+                task: string;
+                assignedTo: string;
+                dueDate: string;
+            }[];
+        }>;
         rockUpdates: import("drizzle-orm/pg-core").PgColumn<{
             name: "rock_updates";
             tableName: "eos_meetings";
@@ -966,9 +1428,20 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: {
+                rockId: string;
+                progress: number;
+                notes: string;
+            }[];
+        }>;
         scorecardReview: import("drizzle-orm/pg-core").PgColumn<{
             name: "scorecard_review";
             tableName: "eos_meetings";
@@ -978,9 +1451,16 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: Record<string, any>;
+        }>;
         meetingRating: import("drizzle-orm/pg-core").PgColumn<{
             name: "meeting_rating";
             tableName: "eos_meetings";
@@ -990,8 +1470,13 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string | number;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         rawTranscript: import("drizzle-orm/pg-core").PgColumn<{
             name: "raw_transcript";
@@ -1002,8 +1487,13 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -1014,8 +1504,13 @@ export declare const meetings: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -1033,9 +1528,16 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         title: import("drizzle-orm/pg-core").PgColumn<{
             name: "title";
             tableName: "eos_todos";
@@ -1045,8 +1547,13 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         assignedTo: import("drizzle-orm/pg-core").PgColumn<{
             name: "assigned_to";
@@ -1057,9 +1564,16 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         dueDate: import("drizzle-orm/pg-core").PgColumn<{
             name: "due_date";
             tableName: "eos_todos";
@@ -1069,8 +1583,13 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         priority: import("drizzle-orm/pg-core").PgColumn<{
             name: "priority";
@@ -1081,8 +1600,13 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -1093,9 +1617,16 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         notes: import("drizzle-orm/pg-core").PgColumn<{
             name: "notes";
             tableName: "eos_todos";
@@ -1105,8 +1636,13 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdFrom: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_from";
@@ -1117,9 +1653,16 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         completedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "completed_at";
             tableName: "eos_todos";
@@ -1129,8 +1672,13 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -1141,8 +1689,13 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -1153,8 +1706,13 @@ export declare const todos: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -1172,9 +1730,16 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         userId: import("drizzle-orm/pg-core").PgColumn<{
             name: "user_id";
             tableName: "eos_rocks";
@@ -1184,9 +1749,16 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         title: import("drizzle-orm/pg-core").PgColumn<{
             name: "title";
             tableName: "eos_rocks";
@@ -1196,8 +1768,13 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         owner: import("drizzle-orm/pg-core").PgColumn<{
             name: "owner";
@@ -1208,9 +1785,16 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         quarter: import("drizzle-orm/pg-core").PgColumn<{
             name: "quarter";
             tableName: "eos_rocks";
@@ -1220,9 +1804,16 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 10;
+        }>;
         dueDate: import("drizzle-orm/pg-core").PgColumn<{
             name: "due_date";
             tableName: "eos_rocks";
@@ -1232,8 +1823,13 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -1244,9 +1840,16 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         completionPercentage: import("drizzle-orm/pg-core").PgColumn<{
             name: "completion_percentage";
             tableName: "eos_rocks";
@@ -1256,8 +1859,13 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string | number;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         milestones: import("drizzle-orm/pg-core").PgColumn<{
             name: "milestones";
@@ -1272,9 +1880,20 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: {
+                title: string;
+                dueDate: string;
+                completed: boolean;
+            }[];
+        }>;
         linksToVision: import("drizzle-orm/pg-core").PgColumn<{
             name: "links_to_vision";
             tableName: "eos_rocks";
@@ -1284,9 +1903,16 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         impactTags: import("drizzle-orm/pg-core").PgColumn<{
             name: "impact_tags";
             tableName: "eos_rocks";
@@ -1296,9 +1922,16 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         notes: import("drizzle-orm/pg-core").PgColumn<{
             name: "notes";
             tableName: "eos_rocks";
@@ -1308,8 +1941,13 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -1320,8 +1958,13 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -1332,8 +1975,13 @@ export declare const rocks: import("drizzle-orm/pg-core").PgTableWithColumns<{
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -1351,9 +1999,16 @@ export declare const rockUpdates: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         rockId: import("drizzle-orm/pg-core").PgColumn<{
             name: "rock_id";
             tableName: "eos_rock_updates";
@@ -1363,9 +2018,16 @@ export declare const rockUpdates: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         updateDate: import("drizzle-orm/pg-core").PgColumn<{
             name: "update_date";
             tableName: "eos_rock_updates";
@@ -1375,8 +2037,13 @@ export declare const rockUpdates: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         progressPercentage: import("drizzle-orm/pg-core").PgColumn<{
             name: "progress_percentage";
@@ -1387,8 +2054,13 @@ export declare const rockUpdates: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string | number;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -1399,9 +2071,16 @@ export declare const rockUpdates: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         notes: import("drizzle-orm/pg-core").PgColumn<{
             name: "notes";
             tableName: "eos_rock_updates";
@@ -1411,8 +2090,13 @@ export declare const rockUpdates: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -1423,8 +2107,13 @@ export declare const rockUpdates: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -1442,9 +2131,16 @@ export declare const missionThemes: import("drizzle-orm/pg-core").PgTableWithCol
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         name: import("drizzle-orm/pg-core").PgColumn<{
             name: "name";
             tableName: "eos_mission_themes";
@@ -1454,9 +2150,16 @@ export declare const missionThemes: import("drizzle-orm/pg-core").PgTableWithCol
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         displayName: import("drizzle-orm/pg-core").PgColumn<{
             name: "display_name";
             tableName: "eos_mission_themes";
@@ -1466,9 +2169,16 @@ export declare const missionThemes: import("drizzle-orm/pg-core").PgTableWithCol
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 100;
+        }>;
         progressMeterName: import("drizzle-orm/pg-core").PgColumn<{
             name: "progress_meter_name";
             tableName: "eos_mission_themes";
@@ -1478,9 +2188,16 @@ export declare const missionThemes: import("drizzle-orm/pg-core").PgTableWithCol
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 100;
+        }>;
         completionTerm: import("drizzle-orm/pg-core").PgColumn<{
             name: "completion_term";
             tableName: "eos_mission_themes";
@@ -1490,9 +2207,16 @@ export declare const missionThemes: import("drizzle-orm/pg-core").PgTableWithCol
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         pointsName: import("drizzle-orm/pg-core").PgColumn<{
             name: "points_name";
             tableName: "eos_mission_themes";
@@ -1502,9 +2226,16 @@ export declare const missionThemes: import("drizzle-orm/pg-core").PgTableWithCol
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         iconSet: import("drizzle-orm/pg-core").PgColumn<{
             name: "icon_set";
             tableName: "eos_mission_themes";
@@ -1514,9 +2245,16 @@ export declare const missionThemes: import("drizzle-orm/pg-core").PgTableWithCol
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         colorScheme: import("drizzle-orm/pg-core").PgColumn<{
             name: "color_scheme";
             tableName: "eos_mission_themes";
@@ -1530,9 +2268,20 @@ export declare const missionThemes: import("drizzle-orm/pg-core").PgTableWithCol
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: {
+                primary: string;
+                secondary: string;
+                accent: string;
+            };
+        }>;
         isActive: import("drizzle-orm/pg-core").PgColumn<{
             name: "is_active";
             tableName: "eos_mission_themes";
@@ -1542,8 +2291,13 @@ export declare const missionThemes: import("drizzle-orm/pg-core").PgTableWithCol
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -1554,8 +2308,13 @@ export declare const missionThemes: import("drizzle-orm/pg-core").PgTableWithCol
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -1573,9 +2332,16 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         userId: import("drizzle-orm/pg-core").PgColumn<{
             name: "user_id";
             tableName: "eos_player_profiles";
@@ -1585,9 +2351,16 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         playerName: import("drizzle-orm/pg-core").PgColumn<{
             name: "player_name";
             tableName: "eos_player_profiles";
@@ -1597,9 +2370,16 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 100;
+        }>;
         preferredThemeId: import("drizzle-orm/pg-core").PgColumn<{
             name: "preferred_theme_id";
             tableName: "eos_player_profiles";
@@ -1609,9 +2389,16 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         totalPoints: import("drizzle-orm/pg-core").PgColumn<{
             name: "total_points";
             tableName: "eos_player_profiles";
@@ -1621,8 +2408,13 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         level: import("drizzle-orm/pg-core").PgColumn<{
             name: "level";
@@ -1633,8 +2425,13 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         currentStreak: import("drizzle-orm/pg-core").PgColumn<{
             name: "current_streak";
@@ -1645,8 +2442,13 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         longestStreak: import("drizzle-orm/pg-core").PgColumn<{
             name: "longest_streak";
@@ -1657,8 +2459,13 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         totalMissionsCompleted: import("drizzle-orm/pg-core").PgColumn<{
             name: "total_missions_completed";
@@ -1669,8 +2476,13 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         totalMilestonesCompleted: import("drizzle-orm/pg-core").PgColumn<{
             name: "total_milestones_completed";
@@ -1681,8 +2493,13 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         averageCompletionTime: import("drizzle-orm/pg-core").PgColumn<{
             name: "average_completion_time";
@@ -1693,8 +2510,13 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         preferredRewardTypes: import("drizzle-orm/pg-core").PgColumn<{
             name: "preferred_reward_types";
@@ -1705,9 +2527,16 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         gamificationSettings: import("drizzle-orm/pg-core").PgColumn<{
             name: "gamification_settings";
             tableName: "eos_player_profiles";
@@ -1722,9 +2551,21 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: {
+                showLeaderboard: boolean;
+                enableNotifications: boolean;
+                showProgressBadges: boolean;
+                enableCompetitiveMode: boolean;
+            };
+        }>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
             tableName: "eos_player_profiles";
@@ -1734,8 +2575,13 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -1746,8 +2592,13 @@ export declare const playerProfiles: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -1765,9 +2616,16 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         legacyRockId: import("drizzle-orm/pg-core").PgColumn<{
             name: "legacy_rock_id";
             tableName: "eos_missions";
@@ -1777,9 +2635,16 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         ownerId: import("drizzle-orm/pg-core").PgColumn<{
             name: "owner_id";
             tableName: "eos_missions";
@@ -1789,9 +2654,16 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         title: import("drizzle-orm/pg-core").PgColumn<{
             name: "title";
             tableName: "eos_missions";
@@ -1801,8 +2673,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         description: import("drizzle-orm/pg-core").PgColumn<{
             name: "description";
@@ -1813,8 +2690,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         quarter: import("drizzle-orm/pg-core").PgColumn<{
             name: "quarter";
@@ -1825,9 +2707,16 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 10;
+        }>;
         dueDate: import("drizzle-orm/pg-core").PgColumn<{
             name: "due_date";
             tableName: "eos_missions";
@@ -1837,8 +2726,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -1849,9 +2743,16 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         completionPercentage: import("drizzle-orm/pg-core").PgColumn<{
             name: "completion_percentage";
             tableName: "eos_missions";
@@ -1861,8 +2762,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string | number;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         difficultyLevel: import("drizzle-orm/pg-core").PgColumn<{
             name: "difficulty_level";
@@ -1873,8 +2779,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string | number;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         estimatedHours: import("drizzle-orm/pg-core").PgColumn<{
             name: "estimated_hours";
@@ -1885,8 +2796,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         actualHours: import("drizzle-orm/pg-core").PgColumn<{
             name: "actual_hours";
@@ -1897,8 +2813,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         basePoints: import("drizzle-orm/pg-core").PgColumn<{
             name: "base_points";
@@ -1909,8 +2830,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string | number;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         bonusPointsEarned: import("drizzle-orm/pg-core").PgColumn<{
             name: "bonus_points_earned";
@@ -1921,8 +2847,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         qualityScore: import("drizzle-orm/pg-core").PgColumn<{
             name: "quality_score";
@@ -1933,8 +2864,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         impactScore: import("drizzle-orm/pg-core").PgColumn<{
             name: "impact_score";
@@ -1945,8 +2881,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         linksToVision: import("drizzle-orm/pg-core").PgColumn<{
             name: "links_to_vision";
@@ -1957,9 +2898,16 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         impactTags: import("drizzle-orm/pg-core").PgColumn<{
             name: "impact_tags";
             tableName: "eos_missions";
@@ -1969,9 +2917,16 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         collaborators: import("drizzle-orm/pg-core").PgColumn<{
             name: "collaborators";
             tableName: "eos_missions";
@@ -1981,9 +2936,16 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         isTeamMission: import("drizzle-orm/pg-core").PgColumn<{
             name: "is_team_mission";
             tableName: "eos_missions";
@@ -1993,8 +2955,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         customThemeOverride: import("drizzle-orm/pg-core").PgColumn<{
             name: "custom_theme_override";
@@ -2005,9 +2972,16 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         successCriteria: import("drizzle-orm/pg-core").PgColumn<{
             name: "success_criteria";
             tableName: "eos_missions";
@@ -2017,9 +2991,16 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         startedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "started_at";
             tableName: "eos_missions";
@@ -2029,8 +3010,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         completedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "completed_at";
@@ -2041,8 +3027,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -2053,8 +3044,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -2065,8 +3061,13 @@ export declare const missions: import("drizzle-orm/pg-core").PgTableWithColumns<
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -2084,9 +3085,16 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         missionId: import("drizzle-orm/pg-core").PgColumn<{
             name: "mission_id";
             tableName: "eos_milestones";
@@ -2096,9 +3104,16 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         title: import("drizzle-orm/pg-core").PgColumn<{
             name: "title";
             tableName: "eos_milestones";
@@ -2108,8 +3123,13 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         description: import("drizzle-orm/pg-core").PgColumn<{
             name: "description";
@@ -2120,8 +3140,13 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         dueDate: import("drizzle-orm/pg-core").PgColumn<{
             name: "due_date";
@@ -2132,8 +3157,13 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -2144,9 +3174,16 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         points: import("drizzle-orm/pg-core").PgColumn<{
             name: "points";
             tableName: "eos_milestones";
@@ -2156,8 +3193,13 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string | number;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         sortOrder: import("drizzle-orm/pg-core").PgColumn<{
             name: "sort_order";
@@ -2168,8 +3210,13 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string | number;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         completedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "completed_at";
@@ -2180,8 +3227,13 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         completedBy: import("drizzle-orm/pg-core").PgColumn<{
             name: "completed_by";
@@ -2192,9 +3244,16 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         notes: import("drizzle-orm/pg-core").PgColumn<{
             name: "notes";
             tableName: "eos_milestones";
@@ -2204,8 +3263,13 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -2216,8 +3280,13 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -2228,8 +3297,13 @@ export declare const milestones: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -2247,9 +3321,16 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         missionId: import("drizzle-orm/pg-core").PgColumn<{
             name: "mission_id";
             tableName: "eos_mission_updates";
@@ -2259,9 +3340,16 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         updateDate: import("drizzle-orm/pg-core").PgColumn<{
             name: "update_date";
             tableName: "eos_mission_updates";
@@ -2271,8 +3359,13 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         progressPercentage: import("drizzle-orm/pg-core").PgColumn<{
             name: "progress_percentage";
@@ -2283,8 +3376,13 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string | number;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -2295,9 +3393,16 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         hoursWorked: import("drizzle-orm/pg-core").PgColumn<{
             name: "hours_worked";
             tableName: "eos_mission_updates";
@@ -2307,8 +3412,13 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         notes: import("drizzle-orm/pg-core").PgColumn<{
             name: "notes";
@@ -2319,8 +3429,13 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         milestonesCompleted: import("drizzle-orm/pg-core").PgColumn<{
             name: "milestones_completed";
@@ -2331,9 +3446,16 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         blockers: import("drizzle-orm/pg-core").PgColumn<{
             name: "blockers";
             tableName: "eos_mission_updates";
@@ -2343,8 +3465,13 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         nextSteps: import("drizzle-orm/pg-core").PgColumn<{
             name: "next_steps";
@@ -2355,8 +3482,13 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         mood: import("drizzle-orm/pg-core").PgColumn<{
             name: "mood";
@@ -2367,9 +3499,16 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         updatedBy: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_by";
             tableName: "eos_mission_updates";
@@ -2379,9 +3518,16 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
             tableName: "eos_mission_updates";
@@ -2391,8 +3537,13 @@ export declare const missionUpdates: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -2410,9 +3561,16 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         name: import("drizzle-orm/pg-core").PgColumn<{
             name: "name";
             tableName: "eos_reward_types";
@@ -2422,9 +3580,16 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 100;
+        }>;
         category: import("drizzle-orm/pg-core").PgColumn<{
             name: "category";
             tableName: "eos_reward_types";
@@ -2434,9 +3599,16 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         description: import("drizzle-orm/pg-core").PgColumn<{
             name: "description";
             tableName: "eos_reward_types";
@@ -2446,8 +3618,13 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         basePointsCost: import("drizzle-orm/pg-core").PgColumn<{
             name: "base_points_cost";
@@ -2458,8 +3635,13 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string | number;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         isActive: import("drizzle-orm/pg-core").PgColumn<{
             name: "is_active";
@@ -2470,8 +3652,13 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         adminApprovalRequired: import("drizzle-orm/pg-core").PgColumn<{
             name: "admin_approval_required";
@@ -2482,8 +3669,13 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         maxRedemptionsPerQuarter: import("drizzle-orm/pg-core").PgColumn<{
             name: "max_redemptions_per_quarter";
@@ -2494,8 +3686,13 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string | number;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         metadata: import("drizzle-orm/pg-core").PgColumn<{
             name: "metadata";
@@ -2506,9 +3703,16 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: Record<string, any>;
+        }>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
             tableName: "eos_reward_types";
@@ -2518,8 +3722,13 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -2530,8 +3739,13 @@ export declare const rewardTypes: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -2549,9 +3763,16 @@ export declare const personalRewards: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         playerId: import("drizzle-orm/pg-core").PgColumn<{
             name: "player_id";
             tableName: "eos_personal_rewards";
@@ -2561,9 +3782,16 @@ export declare const personalRewards: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         rewardTypeId: import("drizzle-orm/pg-core").PgColumn<{
             name: "reward_type_id";
             tableName: "eos_personal_rewards";
@@ -2573,9 +3801,16 @@ export declare const personalRewards: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         customValue: import("drizzle-orm/pg-core").PgColumn<{
             name: "custom_value";
             tableName: "eos_personal_rewards";
@@ -2585,8 +3820,13 @@ export declare const personalRewards: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         customDescription: import("drizzle-orm/pg-core").PgColumn<{
             name: "custom_description";
@@ -2597,8 +3837,13 @@ export declare const personalRewards: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         pointsCost: import("drizzle-orm/pg-core").PgColumn<{
             name: "points_cost";
@@ -2609,8 +3854,13 @@ export declare const personalRewards: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string | number;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         isActive: import("drizzle-orm/pg-core").PgColumn<{
             name: "is_active";
@@ -2621,8 +3871,13 @@ export declare const personalRewards: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         preferenceRanking: import("drizzle-orm/pg-core").PgColumn<{
             name: "preference_ranking";
@@ -2633,8 +3888,13 @@ export declare const personalRewards: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string | number;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -2645,8 +3905,13 @@ export declare const personalRewards: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -2657,8 +3922,13 @@ export declare const personalRewards: import("drizzle-orm/pg-core").PgTableWithC
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -2676,9 +3946,16 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         playerId: import("drizzle-orm/pg-core").PgColumn<{
             name: "player_id";
             tableName: "eos_reward_redemptions";
@@ -2688,9 +3965,16 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         personalRewardId: import("drizzle-orm/pg-core").PgColumn<{
             name: "personal_reward_id";
             tableName: "eos_reward_redemptions";
@@ -2700,9 +3984,16 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         pointsSpent: import("drizzle-orm/pg-core").PgColumn<{
             name: "points_spent";
             tableName: "eos_reward_redemptions";
@@ -2712,8 +4003,13 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string | number;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -2724,9 +4020,16 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         requestedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "requested_at";
             tableName: "eos_reward_redemptions";
@@ -2736,8 +4039,13 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         approvedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "approved_at";
@@ -2748,8 +4056,13 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         approvedBy: import("drizzle-orm/pg-core").PgColumn<{
             name: "approved_by";
@@ -2760,9 +4073,16 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         fulfilledAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "fulfilled_at";
             tableName: "eos_reward_redemptions";
@@ -2772,8 +4092,13 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         fulfilledBy: import("drizzle-orm/pg-core").PgColumn<{
             name: "fulfilled_by";
@@ -2784,9 +4109,16 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         notes: import("drizzle-orm/pg-core").PgColumn<{
             name: "notes";
             tableName: "eos_reward_redemptions";
@@ -2796,8 +4128,13 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         rejectReason: import("drizzle-orm/pg-core").PgColumn<{
             name: "reject_reason";
@@ -2808,8 +4145,13 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         quarterlyCount: import("drizzle-orm/pg-core").PgColumn<{
             name: "quarterly_count";
@@ -2820,8 +4162,13 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -2832,8 +4179,13 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -2844,8 +4196,13 @@ export declare const rewardRedemptions: import("drizzle-orm/pg-core").PgTableWit
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -2863,9 +4220,16 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         name: import("drizzle-orm/pg-core").PgColumn<{
             name: "name";
             tableName: "eos_achievement_types";
@@ -2875,9 +4239,16 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 100;
+        }>;
         description: import("drizzle-orm/pg-core").PgColumn<{
             name: "description";
             tableName: "eos_achievement_types";
@@ -2887,8 +4258,13 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         category: import("drizzle-orm/pg-core").PgColumn<{
             name: "category";
@@ -2899,9 +4275,16 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         iconName: import("drizzle-orm/pg-core").PgColumn<{
             name: "icon_name";
             tableName: "eos_achievement_types";
@@ -2911,9 +4294,16 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         pointsAwarded: import("drizzle-orm/pg-core").PgColumn<{
             name: "points_awarded";
             tableName: "eos_achievement_types";
@@ -2923,8 +4313,13 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         isRepeatable: import("drizzle-orm/pg-core").PgColumn<{
             name: "is_repeatable";
@@ -2935,8 +4330,13 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         triggerCriteria: import("drizzle-orm/pg-core").PgColumn<{
             name: "trigger_criteria";
@@ -2950,9 +4350,19 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: unknown;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: {
+                type: string;
+                conditions: Record<string, any>;
+            };
+        }>;
         rarity: import("drizzle-orm/pg-core").PgColumn<{
             name: "rarity";
             tableName: "eos_achievement_types";
@@ -2962,9 +4372,16 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         isActive: import("drizzle-orm/pg-core").PgColumn<{
             name: "is_active";
             tableName: "eos_achievement_types";
@@ -2974,8 +4391,13 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -2986,8 +4408,13 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -2998,8 +4425,13 @@ export declare const achievementTypes: import("drizzle-orm/pg-core").PgTableWith
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -3017,9 +4449,16 @@ export declare const playerAchievements: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         playerId: import("drizzle-orm/pg-core").PgColumn<{
             name: "player_id";
             tableName: "eos_player_achievements";
@@ -3029,9 +4468,16 @@ export declare const playerAchievements: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         achievementTypeId: import("drizzle-orm/pg-core").PgColumn<{
             name: "achievement_type_id";
             tableName: "eos_player_achievements";
@@ -3041,9 +4487,16 @@ export declare const playerAchievements: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         earnedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "earned_at";
             tableName: "eos_player_achievements";
@@ -3053,8 +4506,13 @@ export declare const playerAchievements: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         contextData: import("drizzle-orm/pg-core").PgColumn<{
             name: "context_data";
@@ -3065,9 +4523,16 @@ export declare const playerAchievements: import("drizzle-orm/pg-core").PgTableWi
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: Record<string, any>;
+        }>;
         pointsEarned: import("drizzle-orm/pg-core").PgColumn<{
             name: "points_earned";
             tableName: "eos_player_achievements";
@@ -3077,8 +4542,13 @@ export declare const playerAchievements: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string | number;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         repeatCount: import("drizzle-orm/pg-core").PgColumn<{
             name: "repeat_count";
@@ -3089,8 +4559,13 @@ export declare const playerAchievements: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         relatedMissionId: import("drizzle-orm/pg-core").PgColumn<{
             name: "related_mission_id";
@@ -3101,9 +4576,16 @@ export declare const playerAchievements: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
             tableName: "eos_player_achievements";
@@ -3113,8 +4595,13 @@ export declare const playerAchievements: import("drizzle-orm/pg-core").PgTableWi
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -3132,9 +4619,16 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         title: import("drizzle-orm/pg-core").PgColumn<{
             name: "title";
             tableName: "eos_team_challenges";
@@ -3144,8 +4638,13 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         description: import("drizzle-orm/pg-core").PgColumn<{
             name: "description";
@@ -3156,8 +4655,13 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         challengeType: import("drizzle-orm/pg-core").PgColumn<{
             name: "challenge_type";
@@ -3168,9 +4672,16 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         startDate: import("drizzle-orm/pg-core").PgColumn<{
             name: "start_date";
             tableName: "eos_team_challenges";
@@ -3180,8 +4691,13 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         endDate: import("drizzle-orm/pg-core").PgColumn<{
             name: "end_date";
@@ -3192,8 +4708,13 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         targetMetric: import("drizzle-orm/pg-core").PgColumn<{
             name: "target_metric";
@@ -3204,9 +4725,16 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 100;
+        }>;
         targetValue: import("drizzle-orm/pg-core").PgColumn<{
             name: "target_value";
             tableName: "eos_team_challenges";
@@ -3216,8 +4744,13 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         currentValue: import("drizzle-orm/pg-core").PgColumn<{
             name: "current_value";
@@ -3228,8 +4761,13 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         participantIds: import("drizzle-orm/pg-core").PgColumn<{
             name: "participant_ids";
@@ -3240,9 +4778,16 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: unknown;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         rewardPool: import("drizzle-orm/pg-core").PgColumn<{
             name: "reward_pool";
             tableName: "eos_team_challenges";
@@ -3252,8 +4797,13 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -3264,9 +4814,16 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         winnerIds: import("drizzle-orm/pg-core").PgColumn<{
             name: "winner_ids";
             tableName: "eos_team_challenges";
@@ -3276,9 +4833,16 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         completedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "completed_at";
             tableName: "eos_team_challenges";
@@ -3288,8 +4852,13 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdBy: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_by";
@@ -3300,9 +4869,16 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
             tableName: "eos_team_challenges";
@@ -3312,8 +4888,13 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -3324,8 +4905,13 @@ export declare const teamChallenges: import("drizzle-orm/pg-core").PgTableWithCo
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -3343,9 +4929,16 @@ export declare const leaderboards: import("drizzle-orm/pg-core").PgTableWithColu
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         periodType: import("drizzle-orm/pg-core").PgColumn<{
             name: "period_type";
             tableName: "eos_leaderboards";
@@ -3355,9 +4948,16 @@ export declare const leaderboards: import("drizzle-orm/pg-core").PgTableWithColu
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         periodStart: import("drizzle-orm/pg-core").PgColumn<{
             name: "period_start";
             tableName: "eos_leaderboards";
@@ -3367,8 +4967,13 @@ export declare const leaderboards: import("drizzle-orm/pg-core").PgTableWithColu
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         periodEnd: import("drizzle-orm/pg-core").PgColumn<{
             name: "period_end";
@@ -3379,8 +4984,13 @@ export declare const leaderboards: import("drizzle-orm/pg-core").PgTableWithColu
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         rankings: import("drizzle-orm/pg-core").PgColumn<{
             name: "rankings";
@@ -3397,9 +5007,22 @@ export declare const leaderboards: import("drizzle-orm/pg-core").PgTableWithColu
             driverParam: unknown;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: {
+                playerId: string;
+                playerName: string;
+                score: number;
+                rank: number;
+                change: number;
+            }[];
+        }>;
         metricType: import("drizzle-orm/pg-core").PgColumn<{
             name: "metric_type";
             tableName: "eos_leaderboards";
@@ -3409,9 +5032,16 @@ export declare const leaderboards: import("drizzle-orm/pg-core").PgTableWithColu
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         lastUpdated: import("drizzle-orm/pg-core").PgColumn<{
             name: "last_updated";
             tableName: "eos_leaderboards";
@@ -3421,8 +5051,13 @@ export declare const leaderboards: import("drizzle-orm/pg-core").PgTableWithColu
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -3433,8 +5068,13 @@ export declare const leaderboards: import("drizzle-orm/pg-core").PgTableWithColu
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -3452,9 +5092,16 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         person: import("drizzle-orm/pg-core").PgColumn<{
             name: "person";
             tableName: "eos_weekly_tasks";
@@ -3464,9 +5111,16 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         weekEnding: import("drizzle-orm/pg-core").PgColumn<{
             name: "week_ending";
             tableName: "eos_weekly_tasks";
@@ -3476,8 +5130,13 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         title: import("drizzle-orm/pg-core").PgColumn<{
             name: "title";
@@ -3488,8 +5147,13 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         description: import("drizzle-orm/pg-core").PgColumn<{
             name: "description";
@@ -3500,8 +5164,13 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         priority: import("drizzle-orm/pg-core").PgColumn<{
             name: "priority";
@@ -3512,8 +5181,13 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string | number;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         estimatedTotalTime: import("drizzle-orm/pg-core").PgColumn<{
             name: "estimated_total_time";
@@ -3524,9 +5198,16 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         expectedImpact: import("drizzle-orm/pg-core").PgColumn<{
             name: "expected_impact";
             tableName: "eos_weekly_tasks";
@@ -3536,8 +5217,13 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         dailyBreakdown: import("drizzle-orm/pg-core").PgColumn<{
             name: "daily_breakdown";
@@ -3548,9 +5234,16 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: unknown;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: string[];
+        }>;
         successCriteria: import("drizzle-orm/pg-core").PgColumn<{
             name: "success_criteria";
             tableName: "eos_weekly_tasks";
@@ -3560,8 +5253,13 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -3572,9 +5270,16 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         completedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "completed_at";
             tableName: "eos_weekly_tasks";
@@ -3584,8 +5289,13 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         actualTimeSpent: import("drizzle-orm/pg-core").PgColumn<{
             name: "actual_time_spent";
@@ -3596,9 +5306,16 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         impactAchieved: import("drizzle-orm/pg-core").PgColumn<{
             name: "impact_achieved";
             tableName: "eos_weekly_tasks";
@@ -3608,8 +5325,13 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -3620,8 +5342,13 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -3632,8 +5359,13 @@ export declare const weeklyTasks: import("drizzle-orm/pg-core").PgTableWithColum
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -3651,9 +5383,16 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         weeklyTaskId: import("drizzle-orm/pg-core").PgColumn<{
             name: "weekly_task_id";
             tableName: "eos_daily_tasks";
@@ -3663,9 +5402,16 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         person: import("drizzle-orm/pg-core").PgColumn<{
             name: "person";
             tableName: "eos_daily_tasks";
@@ -3675,9 +5421,16 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         date: import("drizzle-orm/pg-core").PgColumn<{
             name: "date";
             tableName: "eos_daily_tasks";
@@ -3687,8 +5440,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         title: import("drizzle-orm/pg-core").PgColumn<{
             name: "title";
@@ -3699,8 +5457,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         description: import("drizzle-orm/pg-core").PgColumn<{
             name: "description";
@@ -3711,8 +5474,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         estimatedMinutes: import("drizzle-orm/pg-core").PgColumn<{
             name: "estimated_minutes";
@@ -3723,8 +5491,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string | number;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         actualMinutes: import("drizzle-orm/pg-core").PgColumn<{
             name: "actual_minutes";
@@ -3735,8 +5508,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string | number;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         energyLevel: import("drizzle-orm/pg-core").PgColumn<{
             name: "energy_level";
@@ -3747,8 +5525,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string | number;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         priority: import("drizzle-orm/pg-core").PgColumn<{
             name: "priority";
@@ -3759,8 +5542,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string | number;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         status: import("drizzle-orm/pg-core").PgColumn<{
             name: "status";
@@ -3771,9 +5559,16 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 20;
+        }>;
         completedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "completed_at";
             tableName: "eos_daily_tasks";
@@ -3783,8 +5578,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         notes: import("drizzle-orm/pg-core").PgColumn<{
             name: "notes";
@@ -3795,8 +5595,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
@@ -3807,8 +5612,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         updatedAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "updated_at";
@@ -3819,8 +5629,13 @@ export declare const dailyTasks: import("drizzle-orm/pg-core").PgTableWithColumn
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
@@ -3838,9 +5653,16 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: string;
             notNull: true;
             hasDefault: true;
+            isPrimaryKey: true;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         type: import("drizzle-orm/pg-core").PgColumn<{
             name: "type";
             tableName: "eos_emails";
@@ -3850,9 +5672,16 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         recipient: import("drizzle-orm/pg-core").PgColumn<{
             name: "recipient";
             tableName: "eos_emails";
@@ -3862,9 +5691,16 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         subject: import("drizzle-orm/pg-core").PgColumn<{
             name: "subject";
             tableName: "eos_emails";
@@ -3874,8 +5710,13 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: string;
             notNull: true;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         templateUsed: import("drizzle-orm/pg-core").PgColumn<{
             name: "template_used";
@@ -3886,9 +5727,16 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         sent: import("drizzle-orm/pg-core").PgColumn<{
             name: "sent";
             tableName: "eos_emails";
@@ -3898,8 +5746,13 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: boolean;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         sentAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "sent_at";
@@ -3910,8 +5763,13 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
         relatedEntityType: import("drizzle-orm/pg-core").PgColumn<{
             name: "related_entity_type";
@@ -3922,9 +5780,16 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: 50;
+        }>;
         relatedEntityId: import("drizzle-orm/pg-core").PgColumn<{
             name: "related_entity_id";
             tableName: "eos_emails";
@@ -3934,9 +5799,16 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: string;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: [string, ...string[]];
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            length: number;
+        }>;
         metadata: import("drizzle-orm/pg-core").PgColumn<{
             name: "metadata";
             tableName: "eos_emails";
@@ -3946,9 +5818,16 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: unknown;
             notNull: false;
             hasDefault: false;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
-        }, {}, {}>;
+            identity: undefined;
+            generated: undefined;
+        }, {}, {
+            $type: Record<string, any>;
+        }>;
         createdAt: import("drizzle-orm/pg-core").PgColumn<{
             name: "created_at";
             tableName: "eos_emails";
@@ -3958,913 +5837,3800 @@ export declare const eosEmails: import("drizzle-orm/pg-core").PgTableWithColumns
             driverParam: string;
             notNull: false;
             hasDefault: true;
+            isPrimaryKey: false;
+            isAutoincrement: false;
+            hasRuntimeDefault: false;
             enumValues: undefined;
             baseColumn: never;
+            identity: undefined;
+            generated: undefined;
         }, {}, {}>;
     };
     dialect: "pg";
 }>;
-export declare const insertVisionSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    coreValues: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    coreCustomers: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    niche: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    tenYearTarget: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    marketingStrategy: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    threeYearPicture: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    oneYearPlan: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    quarterlyTheme: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    coreValues?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    coreCustomers?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    niche?: string;
-    tenYearTarget?: string;
-    marketingStrategy?: string;
-    threeYearPicture?: string;
-    oneYearPlan?: string;
-    quarterlyTheme?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-}, {
-    id?: string;
-    coreValues?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    coreCustomers?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    niche?: string;
-    tenYearTarget?: string;
-    marketingStrategy?: string;
-    threeYearPicture?: string;
-    oneYearPlan?: string;
-    quarterlyTheme?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-}>;
-export declare const insertSeatSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    name: z.ZodString;
-    coreValues: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    accountabilityChartPosition: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    roles: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    responsibilities: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    kpis: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    assignedTo: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    gwd: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    isActive: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    name?: string;
-    coreValues?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    accountabilityChartPosition?: string;
-    roles?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    responsibilities?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    kpis?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    assignedTo?: string;
-    gwd?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    isActive?: unknown;
-}, {
-    id?: string;
-    name?: string;
-    coreValues?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    accountabilityChartPosition?: string;
-    roles?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    responsibilities?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    kpis?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    assignedTo?: string;
-    gwd?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    isActive?: unknown;
-}>;
-export declare const insertPersonalScorecardSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    seatId: z.ZodString;
-    weekEnding: z.ZodEnum<undefined>;
-    kpiScores: z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>;
-    notes: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    seatId?: string;
-    weekEnding?: unknown;
-    kpiScores?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    notes?: string;
-}, {
-    id?: string;
-    createdAt?: unknown;
-    seatId?: string;
-    weekEnding?: unknown;
-    kpiScores?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    notes?: string;
-}>;
-export declare const insertScorecardMetricSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    name: z.ZodString;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    isActive: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    owner: z.ZodString;
-    target: z.ZodEnum<undefined>;
-    unit: z.ZodString;
-    frequency: z.ZodString;
-    category: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    formula: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    name?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    isActive?: unknown;
-    owner?: string;
-    target?: unknown;
-    unit?: string;
-    frequency?: string;
-    category?: string;
-    formula?: string;
-}, {
-    id?: string;
-    name?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    isActive?: unknown;
-    owner?: string;
-    target?: unknown;
-    unit?: string;
-    frequency?: string;
-    category?: string;
-    formula?: string;
-}>;
-export declare const insertWeeklyScorecardSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    weekEnding: z.ZodEnum<undefined>;
-    notes: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    metricId: z.ZodString;
-    actualValue: z.ZodEnum<undefined>;
-    targetValue: z.ZodEnum<undefined>;
-    variance: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    redFlag: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    weekEnding?: unknown;
-    notes?: string;
-    metricId?: string;
-    actualValue?: unknown;
-    targetValue?: unknown;
-    variance?: unknown;
-    redFlag?: unknown;
-}, {
-    id?: string;
-    createdAt?: unknown;
-    weekEnding?: unknown;
-    notes?: string;
-    metricId?: string;
-    actualValue?: unknown;
-    targetValue?: unknown;
-    variance?: unknown;
-    redFlag?: unknown;
-}>;
-export declare const insertIssueSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    assignedTo: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    category: z.ZodString;
-    description: z.ZodString;
-    title: z.ZodString;
-    status: z.ZodOptional<z.ZodString>;
-    impactLevel: z.ZodString;
-    createdFrom: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    resolutionNotes: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    linksToVision: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    assignedTo?: string;
-    category?: string;
-    description?: string;
-    title?: string;
-    status?: string;
-    impactLevel?: string;
-    createdFrom?: string;
-    resolutionNotes?: string;
-    linksToVision?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-}, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    assignedTo?: string;
-    category?: string;
-    description?: string;
-    title?: string;
-    status?: string;
-    impactLevel?: string;
-    createdFrom?: string;
-    resolutionNotes?: string;
-    linksToVision?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-}>;
-export declare const insertMeetingSchema: z.ZodObject<{
-    date: z.ZodEnum<undefined>;
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    type: z.ZodString;
-    attendees: z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>;
-    agenda: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    issuesDiscussed: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    decisionsmade: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    actionItems: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    rockUpdates: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    scorecardReview: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    meetingRating: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    rawTranscript: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    date?: unknown;
-    id?: string;
-    createdAt?: unknown;
-    type?: string;
-    attendees?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    agenda?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    issuesDiscussed?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    decisionsmade?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    actionItems?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    rockUpdates?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    scorecardReview?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    meetingRating?: unknown;
-    rawTranscript?: string;
-}, {
-    date?: unknown;
-    id?: string;
-    createdAt?: unknown;
-    type?: string;
-    attendees?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    agenda?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    issuesDiscussed?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    decisionsmade?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    actionItems?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    rockUpdates?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    scorecardReview?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    meetingRating?: unknown;
-    rawTranscript?: string;
-}>;
-export declare const insertTodoSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    assignedTo: z.ZodString;
-    notes: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    title: z.ZodString;
-    status: z.ZodOptional<z.ZodString>;
-    createdFrom: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    dueDate: z.ZodEnum<undefined>;
-    priority: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    completedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    assignedTo?: string;
-    notes?: string;
-    title?: string;
-    status?: string;
-    createdFrom?: string;
-    dueDate?: unknown;
-    priority?: unknown;
-    completedAt?: unknown;
-}, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    assignedTo?: string;
-    notes?: string;
-    title?: string;
-    status?: string;
-    createdFrom?: string;
-    dueDate?: unknown;
-    priority?: unknown;
-    completedAt?: unknown;
-}>;
-export declare const insertRockSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    notes: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    owner: z.ZodString;
-    title: z.ZodString;
-    status: z.ZodOptional<z.ZodString>;
-    linksToVision: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    dueDate: z.ZodEnum<undefined>;
-    userId: z.ZodString;
-    quarter: z.ZodString;
-    completionPercentage: z.ZodOptional<z.ZodEnum<undefined>>;
-    milestones: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    impactTags: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    notes?: string;
-    owner?: string;
-    title?: string;
-    status?: string;
-    linksToVision?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    dueDate?: unknown;
-    userId?: string;
-    quarter?: string;
-    completionPercentage?: unknown;
-    milestones?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    impactTags?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-}, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    notes?: string;
-    owner?: string;
-    title?: string;
-    status?: string;
-    linksToVision?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    dueDate?: unknown;
-    userId?: string;
-    quarter?: string;
-    completionPercentage?: unknown;
-    milestones?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    impactTags?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-}>;
-export declare const insertMissionSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    description: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    title: z.ZodString;
-    status: z.ZodOptional<z.ZodString>;
-    linksToVision: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    dueDate: z.ZodEnum<undefined>;
-    completedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    quarter: z.ZodString;
-    completionPercentage: z.ZodOptional<z.ZodEnum<undefined>>;
-    impactTags: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    legacyRockId: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    ownerId: z.ZodString;
-    difficultyLevel: z.ZodOptional<z.ZodEnum<undefined>>;
-    estimatedHours: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    actualHours: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    basePoints: z.ZodOptional<z.ZodEnum<undefined>>;
-    bonusPointsEarned: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    qualityScore: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    impactScore: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    collaborators: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    isTeamMission: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    customThemeOverride: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    successCriteria: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    startedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    description?: string;
-    title?: string;
-    status?: string;
-    linksToVision?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    dueDate?: unknown;
-    completedAt?: unknown;
-    quarter?: string;
-    completionPercentage?: unknown;
-    impactTags?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    legacyRockId?: string;
-    ownerId?: string;
-    difficultyLevel?: unknown;
-    estimatedHours?: unknown;
-    actualHours?: unknown;
-    basePoints?: unknown;
-    bonusPointsEarned?: unknown;
-    qualityScore?: unknown;
-    impactScore?: unknown;
-    collaborators?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    isTeamMission?: unknown;
-    customThemeOverride?: string;
-    successCriteria?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    startedAt?: unknown;
-}, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    description?: string;
-    title?: string;
-    status?: string;
-    linksToVision?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    dueDate?: unknown;
-    completedAt?: unknown;
-    quarter?: string;
-    completionPercentage?: unknown;
-    impactTags?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    legacyRockId?: string;
-    ownerId?: string;
-    difficultyLevel?: unknown;
-    estimatedHours?: unknown;
-    actualHours?: unknown;
-    basePoints?: unknown;
-    bonusPointsEarned?: unknown;
-    qualityScore?: unknown;
-    impactScore?: unknown;
-    collaborators?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    isTeamMission?: unknown;
-    customThemeOverride?: string;
-    successCriteria?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    startedAt?: unknown;
-}>;
-export declare const insertMissionUpdateSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    notes: z.ZodString;
-    status: z.ZodString;
-    updateDate: z.ZodEnum<undefined>;
-    progressPercentage: z.ZodEnum<undefined>;
-    missionId: z.ZodString;
-    hoursWorked: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    milestonesCompleted: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    blockers: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    nextSteps: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    mood: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    updatedBy: z.ZodString;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    notes?: string;
-    status?: string;
-    updateDate?: unknown;
-    progressPercentage?: unknown;
-    missionId?: string;
-    hoursWorked?: unknown;
-    milestonesCompleted?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    blockers?: string;
-    nextSteps?: string;
-    mood?: string;
-    updatedBy?: string;
-}, {
-    id?: string;
-    createdAt?: unknown;
-    notes?: string;
-    status?: string;
-    updateDate?: unknown;
-    progressPercentage?: unknown;
-    missionId?: string;
-    hoursWorked?: unknown;
-    milestonesCompleted?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    blockers?: string;
-    nextSteps?: string;
-    mood?: string;
-    updatedBy?: string;
-}>;
-export declare const insertMilestoneSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    notes: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    description: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    title: z.ZodString;
-    status: z.ZodOptional<z.ZodString>;
-    dueDate: z.ZodEnum<undefined>;
-    completedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    missionId: z.ZodString;
-    points: z.ZodOptional<z.ZodEnum<undefined>>;
-    sortOrder: z.ZodEnum<undefined>;
-    completedBy: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    notes?: string;
-    description?: string;
-    title?: string;
-    status?: string;
-    dueDate?: unknown;
-    completedAt?: unknown;
-    missionId?: string;
-    points?: unknown;
-    sortOrder?: unknown;
-    completedBy?: string;
-}, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    notes?: string;
-    description?: string;
-    title?: string;
-    status?: string;
-    dueDate?: unknown;
-    completedAt?: unknown;
-    missionId?: string;
-    points?: unknown;
-    sortOrder?: unknown;
-    completedBy?: string;
-}>;
-export declare const insertPlayerProfileSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    userId: z.ZodString;
-    playerName: z.ZodString;
-    preferredThemeId: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    totalPoints: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    level: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    currentStreak: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    longestStreak: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    totalMissionsCompleted: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    totalMilestonesCompleted: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    averageCompletionTime: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    preferredRewardTypes: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    gamificationSettings: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    userId?: string;
-    playerName?: string;
-    preferredThemeId?: string;
-    totalPoints?: unknown;
-    level?: unknown;
-    currentStreak?: unknown;
-    longestStreak?: unknown;
-    totalMissionsCompleted?: unknown;
-    totalMilestonesCompleted?: unknown;
-    averageCompletionTime?: unknown;
-    preferredRewardTypes?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    gamificationSettings?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-}, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    userId?: string;
-    playerName?: string;
-    preferredThemeId?: string;
-    totalPoints?: unknown;
-    level?: unknown;
-    currentStreak?: unknown;
-    longestStreak?: unknown;
-    totalMissionsCompleted?: unknown;
-    totalMilestonesCompleted?: unknown;
-    averageCompletionTime?: unknown;
-    preferredRewardTypes?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    gamificationSettings?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-}>;
-export declare const insertPersonalRewardSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    isActive: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    playerId: z.ZodString;
-    rewardTypeId: z.ZodString;
-    customValue: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    customDescription: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    pointsCost: z.ZodEnum<undefined>;
-    preferenceRanking: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    isActive?: unknown;
-    playerId?: string;
-    rewardTypeId?: string;
-    customValue?: unknown;
-    customDescription?: string;
-    pointsCost?: unknown;
-    preferenceRanking?: unknown;
-}, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    isActive?: unknown;
-    playerId?: string;
-    rewardTypeId?: string;
-    customValue?: unknown;
-    customDescription?: string;
-    pointsCost?: unknown;
-    preferenceRanking?: unknown;
-}>;
-export declare const insertWeeklyTaskSchema: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    weekEnding: z.ZodEnum<undefined>;
-    description: z.ZodString;
-    title: z.ZodString;
-    status: z.ZodOptional<z.ZodString>;
-    priority: z.ZodOptional<z.ZodEnum<undefined>>;
-    completedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    successCriteria: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    person: z.ZodString;
-    estimatedTotalTime: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    expectedImpact: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    dailyBreakdown: z.ZodOptional<z.ZodNullable<z.ZodType<string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[], z.ZodTypeDef, string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[]>>>;
-    actualTimeSpent: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    impactAchieved: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    weekEnding?: unknown;
-    description?: string;
-    title?: string;
-    status?: string;
-    priority?: unknown;
-    completedAt?: unknown;
-    successCriteria?: string;
-    person?: string;
-    estimatedTotalTime?: string;
-    expectedImpact?: string;
-    dailyBreakdown?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    actualTimeSpent?: string;
-    impactAchieved?: string;
-}, {
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    weekEnding?: unknown;
-    description?: string;
-    title?: string;
-    status?: string;
-    priority?: unknown;
-    completedAt?: unknown;
-    successCriteria?: string;
-    person?: string;
-    estimatedTotalTime?: string;
-    expectedImpact?: string;
-    dailyBreakdown?: string | number | boolean | {
-        [key: string]: string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    } | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | (string | number | boolean | any | any)[])[])[])[])[])[])[])[])[])[])[];
-    actualTimeSpent?: string;
-    impactAchieved?: string;
-}>;
-export declare const insertDailyTaskSchema: z.ZodObject<{
-    date: z.ZodEnum<undefined>;
-    id: z.ZodOptional<z.ZodString>;
-    createdAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    updatedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    notes: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    description: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    title: z.ZodString;
-    status: z.ZodOptional<z.ZodString>;
-    priority: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    completedAt: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    person: z.ZodString;
-    weeklyTaskId: z.ZodOptional<z.ZodNullable<z.ZodString>>;
-    estimatedMinutes: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    actualMinutes: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-    energyLevel: z.ZodOptional<z.ZodNullable<z.ZodEnum<undefined>>>;
-}, z.UnknownKeysParam, z.ZodTypeAny, {
-    date?: unknown;
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    notes?: string;
-    description?: string;
-    title?: string;
-    status?: string;
-    priority?: unknown;
-    completedAt?: unknown;
-    person?: string;
-    weeklyTaskId?: string;
-    estimatedMinutes?: unknown;
-    actualMinutes?: unknown;
-    energyLevel?: unknown;
-}, {
-    date?: unknown;
-    id?: string;
-    createdAt?: unknown;
-    updatedAt?: unknown;
-    notes?: string;
-    description?: string;
-    title?: string;
-    status?: string;
-    priority?: unknown;
-    completedAt?: unknown;
-    person?: string;
-    weeklyTaskId?: string;
-    estimatedMinutes?: unknown;
-    actualMinutes?: unknown;
-    energyLevel?: unknown;
-}>;
+export declare const insertVisionSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_vision";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    coreValues: import("drizzle-orm/pg-core").PgColumn<{
+        name: "core_values";
+        tableName: "eos_vision";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    coreCustomers: import("drizzle-orm/pg-core").PgColumn<{
+        name: "core_customers";
+        tableName: "eos_vision";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    niche: import("drizzle-orm/pg-core").PgColumn<{
+        name: "niche";
+        tableName: "eos_vision";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    tenYearTarget: import("drizzle-orm/pg-core").PgColumn<{
+        name: "ten_year_target";
+        tableName: "eos_vision";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    marketingStrategy: import("drizzle-orm/pg-core").PgColumn<{
+        name: "marketing_strategy";
+        tableName: "eos_vision";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    threeYearPicture: import("drizzle-orm/pg-core").PgColumn<{
+        name: "three_year_picture";
+        tableName: "eos_vision";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    oneYearPlan: import("drizzle-orm/pg-core").PgColumn<{
+        name: "one_year_plan";
+        tableName: "eos_vision";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    quarterlyTheme: import("drizzle-orm/pg-core").PgColumn<{
+        name: "quarterly_theme";
+        tableName: "eos_vision";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_vision";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_vision";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertSeatSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_seats";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    name: import("drizzle-orm/pg-core").PgColumn<{
+        name: "name";
+        tableName: "eos_seats";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 100;
+    }>;
+    accountabilityChartPosition: import("drizzle-orm/pg-core").PgColumn<{
+        name: "accountability_chart_position";
+        tableName: "eos_seats";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 100;
+    }>;
+    roles: import("drizzle-orm/pg-core").PgColumn<{
+        name: "roles";
+        tableName: "eos_seats";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    responsibilities: import("drizzle-orm/pg-core").PgColumn<{
+        name: "responsibilities";
+        tableName: "eos_seats";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    kpis: import("drizzle-orm/pg-core").PgColumn<{
+        name: "kpis";
+        tableName: "eos_seats";
+        dataType: "json";
+        columnType: "PgJson";
+        data: {
+            name: string;
+            target: number;
+            unit: string;
+            frequency: string;
+        }[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: {
+            name: string;
+            target: number;
+            unit: string;
+            frequency: string;
+        }[];
+    }>;
+    assignedTo: import("drizzle-orm/pg-core").PgColumn<{
+        name: "assigned_to";
+        tableName: "eos_seats";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    gwd: import("drizzle-orm/pg-core").PgColumn<{
+        name: "gwd";
+        tableName: "eos_seats";
+        dataType: "json";
+        columnType: "PgJson";
+        data: {
+            gets: boolean;
+            wants: boolean;
+            capacity: boolean;
+        };
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: {
+            gets: boolean;
+            wants: boolean;
+            capacity: boolean;
+        };
+    }>;
+    coreValues: import("drizzle-orm/pg-core").PgColumn<{
+        name: "core_values";
+        tableName: "eos_seats";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    isActive: import("drizzle-orm/pg-core").PgColumn<{
+        name: "is_active";
+        tableName: "eos_seats";
+        dataType: "boolean";
+        columnType: "PgBoolean";
+        data: boolean;
+        driverParam: boolean;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_seats";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_seats";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertPersonalScorecardSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_personal_scorecards";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    seatId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "seat_id";
+        tableName: "eos_personal_scorecards";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    weekEnding: import("drizzle-orm/pg-core").PgColumn<{
+        name: "week_ending";
+        tableName: "eos_personal_scorecards";
+        dataType: "string";
+        columnType: "PgDateString";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    kpiScores: import("drizzle-orm/pg-core").PgColumn<{
+        name: "kpi_scores";
+        tableName: "eos_personal_scorecards";
+        dataType: "json";
+        columnType: "PgJson";
+        data: Record<string, number>;
+        driverParam: unknown;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: Record<string, number>;
+    }>;
+    notes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "notes";
+        tableName: "eos_personal_scorecards";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_personal_scorecards";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertScorecardMetricSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_scorecard_metrics";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    name: import("drizzle-orm/pg-core").PgColumn<{
+        name: "name";
+        tableName: "eos_scorecard_metrics";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 100;
+    }>;
+    owner: import("drizzle-orm/pg-core").PgColumn<{
+        name: "owner";
+        tableName: "eos_scorecard_metrics";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    target: import("drizzle-orm/pg-core").PgColumn<{
+        name: "target";
+        tableName: "eos_scorecard_metrics";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    unit: import("drizzle-orm/pg-core").PgColumn<{
+        name: "unit";
+        tableName: "eos_scorecard_metrics";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    frequency: import("drizzle-orm/pg-core").PgColumn<{
+        name: "frequency";
+        tableName: "eos_scorecard_metrics";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    category: import("drizzle-orm/pg-core").PgColumn<{
+        name: "category";
+        tableName: "eos_scorecard_metrics";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 50;
+    }>;
+    formula: import("drizzle-orm/pg-core").PgColumn<{
+        name: "formula";
+        tableName: "eos_scorecard_metrics";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    isActive: import("drizzle-orm/pg-core").PgColumn<{
+        name: "is_active";
+        tableName: "eos_scorecard_metrics";
+        dataType: "boolean";
+        columnType: "PgBoolean";
+        data: boolean;
+        driverParam: boolean;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_scorecard_metrics";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_scorecard_metrics";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertWeeklyScorecardSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_weekly_scorecard";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    weekEnding: import("drizzle-orm/pg-core").PgColumn<{
+        name: "week_ending";
+        tableName: "eos_weekly_scorecard";
+        dataType: "string";
+        columnType: "PgDateString";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    metricId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "metric_id";
+        tableName: "eos_weekly_scorecard";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    actualValue: import("drizzle-orm/pg-core").PgColumn<{
+        name: "actual_value";
+        tableName: "eos_weekly_scorecard";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    targetValue: import("drizzle-orm/pg-core").PgColumn<{
+        name: "target_value";
+        tableName: "eos_weekly_scorecard";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    variance: import("drizzle-orm/pg-core").PgColumn<{
+        name: "variance";
+        tableName: "eos_weekly_scorecard";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    notes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "notes";
+        tableName: "eos_weekly_scorecard";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    redFlag: import("drizzle-orm/pg-core").PgColumn<{
+        name: "red_flag";
+        tableName: "eos_weekly_scorecard";
+        dataType: "boolean";
+        columnType: "PgBoolean";
+        data: boolean;
+        driverParam: boolean;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_weekly_scorecard";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertIssueSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_issues";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    title: import("drizzle-orm/pg-core").PgColumn<{
+        name: "title";
+        tableName: "eos_issues";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    category: import("drizzle-orm/pg-core").PgColumn<{
+        name: "category";
+        tableName: "eos_issues";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 50;
+    }>;
+    description: import("drizzle-orm/pg-core").PgColumn<{
+        name: "description";
+        tableName: "eos_issues";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    status: import("drizzle-orm/pg-core").PgColumn<{
+        name: "status";
+        tableName: "eos_issues";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    impactLevel: import("drizzle-orm/pg-core").PgColumn<{
+        name: "impact_level";
+        tableName: "eos_issues";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 10;
+    }>;
+    assignedTo: import("drizzle-orm/pg-core").PgColumn<{
+        name: "assigned_to";
+        tableName: "eos_issues";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    createdFrom: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_from";
+        tableName: "eos_issues";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 50;
+    }>;
+    resolutionNotes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "resolution_notes";
+        tableName: "eos_issues";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    linksToVision: import("drizzle-orm/pg-core").PgColumn<{
+        name: "links_to_vision";
+        tableName: "eos_issues";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_issues";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_issues";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertMeetingSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_meetings";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    type: import("drizzle-orm/pg-core").PgColumn<{
+        name: "type";
+        tableName: "eos_meetings";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    date: import("drizzle-orm/pg-core").PgColumn<{
+        name: "date";
+        tableName: "eos_meetings";
+        dataType: "string";
+        columnType: "PgDateString";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    attendees: import("drizzle-orm/pg-core").PgColumn<{
+        name: "attendees";
+        tableName: "eos_meetings";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    agenda: import("drizzle-orm/pg-core").PgColumn<{
+        name: "agenda";
+        tableName: "eos_meetings";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    issuesDiscussed: import("drizzle-orm/pg-core").PgColumn<{
+        name: "issues_discussed";
+        tableName: "eos_meetings";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    decisionsmade: import("drizzle-orm/pg-core").PgColumn<{
+        name: "decisions_made";
+        tableName: "eos_meetings";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    actionItems: import("drizzle-orm/pg-core").PgColumn<{
+        name: "action_items";
+        tableName: "eos_meetings";
+        dataType: "json";
+        columnType: "PgJson";
+        data: {
+            task: string;
+            assignedTo: string;
+            dueDate: string;
+        }[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: {
+            task: string;
+            assignedTo: string;
+            dueDate: string;
+        }[];
+    }>;
+    rockUpdates: import("drizzle-orm/pg-core").PgColumn<{
+        name: "rock_updates";
+        tableName: "eos_meetings";
+        dataType: "json";
+        columnType: "PgJson";
+        data: {
+            rockId: string;
+            progress: number;
+            notes: string;
+        }[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: {
+            rockId: string;
+            progress: number;
+            notes: string;
+        }[];
+    }>;
+    scorecardReview: import("drizzle-orm/pg-core").PgColumn<{
+        name: "scorecard_review";
+        tableName: "eos_meetings";
+        dataType: "json";
+        columnType: "PgJson";
+        data: Record<string, any>;
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: Record<string, any>;
+    }>;
+    meetingRating: import("drizzle-orm/pg-core").PgColumn<{
+        name: "meeting_rating";
+        tableName: "eos_meetings";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    rawTranscript: import("drizzle-orm/pg-core").PgColumn<{
+        name: "raw_transcript";
+        tableName: "eos_meetings";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_meetings";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertTodoSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_todos";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    title: import("drizzle-orm/pg-core").PgColumn<{
+        name: "title";
+        tableName: "eos_todos";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    assignedTo: import("drizzle-orm/pg-core").PgColumn<{
+        name: "assigned_to";
+        tableName: "eos_todos";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    dueDate: import("drizzle-orm/pg-core").PgColumn<{
+        name: "due_date";
+        tableName: "eos_todos";
+        dataType: "string";
+        columnType: "PgDateString";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    priority: import("drizzle-orm/pg-core").PgColumn<{
+        name: "priority";
+        tableName: "eos_todos";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    status: import("drizzle-orm/pg-core").PgColumn<{
+        name: "status";
+        tableName: "eos_todos";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    notes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "notes";
+        tableName: "eos_todos";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdFrom: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_from";
+        tableName: "eos_todos";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 50;
+    }>;
+    completedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "completed_at";
+        tableName: "eos_todos";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_todos";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_todos";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertRockSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_rocks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    userId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "user_id";
+        tableName: "eos_rocks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    title: import("drizzle-orm/pg-core").PgColumn<{
+        name: "title";
+        tableName: "eos_rocks";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    owner: import("drizzle-orm/pg-core").PgColumn<{
+        name: "owner";
+        tableName: "eos_rocks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    quarter: import("drizzle-orm/pg-core").PgColumn<{
+        name: "quarter";
+        tableName: "eos_rocks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 10;
+    }>;
+    dueDate: import("drizzle-orm/pg-core").PgColumn<{
+        name: "due_date";
+        tableName: "eos_rocks";
+        dataType: "string";
+        columnType: "PgDateString";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    status: import("drizzle-orm/pg-core").PgColumn<{
+        name: "status";
+        tableName: "eos_rocks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    completionPercentage: import("drizzle-orm/pg-core").PgColumn<{
+        name: "completion_percentage";
+        tableName: "eos_rocks";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    milestones: import("drizzle-orm/pg-core").PgColumn<{
+        name: "milestones";
+        tableName: "eos_rocks";
+        dataType: "json";
+        columnType: "PgJson";
+        data: {
+            title: string;
+            dueDate: string;
+            completed: boolean;
+        }[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: {
+            title: string;
+            dueDate: string;
+            completed: boolean;
+        }[];
+    }>;
+    linksToVision: import("drizzle-orm/pg-core").PgColumn<{
+        name: "links_to_vision";
+        tableName: "eos_rocks";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    impactTags: import("drizzle-orm/pg-core").PgColumn<{
+        name: "impact_tags";
+        tableName: "eos_rocks";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    notes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "notes";
+        tableName: "eos_rocks";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_rocks";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_rocks";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertMissionSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    legacyRockId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "legacy_rock_id";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    ownerId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "owner_id";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    title: import("drizzle-orm/pg-core").PgColumn<{
+        name: "title";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    description: import("drizzle-orm/pg-core").PgColumn<{
+        name: "description";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    quarter: import("drizzle-orm/pg-core").PgColumn<{
+        name: "quarter";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 10;
+    }>;
+    dueDate: import("drizzle-orm/pg-core").PgColumn<{
+        name: "due_date";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgDateString";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    status: import("drizzle-orm/pg-core").PgColumn<{
+        name: "status";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    completionPercentage: import("drizzle-orm/pg-core").PgColumn<{
+        name: "completion_percentage";
+        tableName: "eos_missions";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    difficultyLevel: import("drizzle-orm/pg-core").PgColumn<{
+        name: "difficulty_level";
+        tableName: "eos_missions";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    estimatedHours: import("drizzle-orm/pg-core").PgColumn<{
+        name: "estimated_hours";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    actualHours: import("drizzle-orm/pg-core").PgColumn<{
+        name: "actual_hours";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    basePoints: import("drizzle-orm/pg-core").PgColumn<{
+        name: "base_points";
+        tableName: "eos_missions";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    bonusPointsEarned: import("drizzle-orm/pg-core").PgColumn<{
+        name: "bonus_points_earned";
+        tableName: "eos_missions";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    qualityScore: import("drizzle-orm/pg-core").PgColumn<{
+        name: "quality_score";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    impactScore: import("drizzle-orm/pg-core").PgColumn<{
+        name: "impact_score";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    linksToVision: import("drizzle-orm/pg-core").PgColumn<{
+        name: "links_to_vision";
+        tableName: "eos_missions";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    impactTags: import("drizzle-orm/pg-core").PgColumn<{
+        name: "impact_tags";
+        tableName: "eos_missions";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    collaborators: import("drizzle-orm/pg-core").PgColumn<{
+        name: "collaborators";
+        tableName: "eos_missions";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    isTeamMission: import("drizzle-orm/pg-core").PgColumn<{
+        name: "is_team_mission";
+        tableName: "eos_missions";
+        dataType: "boolean";
+        columnType: "PgBoolean";
+        data: boolean;
+        driverParam: boolean;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    customThemeOverride: import("drizzle-orm/pg-core").PgColumn<{
+        name: "custom_theme_override";
+        tableName: "eos_missions";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    successCriteria: import("drizzle-orm/pg-core").PgColumn<{
+        name: "success_criteria";
+        tableName: "eos_missions";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    startedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "started_at";
+        tableName: "eos_missions";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    completedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "completed_at";
+        tableName: "eos_missions";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_missions";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_missions";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertMissionUpdateSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_mission_updates";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    missionId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "mission_id";
+        tableName: "eos_mission_updates";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    updateDate: import("drizzle-orm/pg-core").PgColumn<{
+        name: "update_date";
+        tableName: "eos_mission_updates";
+        dataType: "string";
+        columnType: "PgDateString";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    progressPercentage: import("drizzle-orm/pg-core").PgColumn<{
+        name: "progress_percentage";
+        tableName: "eos_mission_updates";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    status: import("drizzle-orm/pg-core").PgColumn<{
+        name: "status";
+        tableName: "eos_mission_updates";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    hoursWorked: import("drizzle-orm/pg-core").PgColumn<{
+        name: "hours_worked";
+        tableName: "eos_mission_updates";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    notes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "notes";
+        tableName: "eos_mission_updates";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    milestonesCompleted: import("drizzle-orm/pg-core").PgColumn<{
+        name: "milestones_completed";
+        tableName: "eos_mission_updates";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    blockers: import("drizzle-orm/pg-core").PgColumn<{
+        name: "blockers";
+        tableName: "eos_mission_updates";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    nextSteps: import("drizzle-orm/pg-core").PgColumn<{
+        name: "next_steps";
+        tableName: "eos_mission_updates";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    mood: import("drizzle-orm/pg-core").PgColumn<{
+        name: "mood";
+        tableName: "eos_mission_updates";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    updatedBy: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_by";
+        tableName: "eos_mission_updates";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_mission_updates";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertMilestoneSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_milestones";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    missionId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "mission_id";
+        tableName: "eos_milestones";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    title: import("drizzle-orm/pg-core").PgColumn<{
+        name: "title";
+        tableName: "eos_milestones";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    description: import("drizzle-orm/pg-core").PgColumn<{
+        name: "description";
+        tableName: "eos_milestones";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    dueDate: import("drizzle-orm/pg-core").PgColumn<{
+        name: "due_date";
+        tableName: "eos_milestones";
+        dataType: "string";
+        columnType: "PgDateString";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    status: import("drizzle-orm/pg-core").PgColumn<{
+        name: "status";
+        tableName: "eos_milestones";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    points: import("drizzle-orm/pg-core").PgColumn<{
+        name: "points";
+        tableName: "eos_milestones";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    sortOrder: import("drizzle-orm/pg-core").PgColumn<{
+        name: "sort_order";
+        tableName: "eos_milestones";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    completedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "completed_at";
+        tableName: "eos_milestones";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    completedBy: import("drizzle-orm/pg-core").PgColumn<{
+        name: "completed_by";
+        tableName: "eos_milestones";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    notes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "notes";
+        tableName: "eos_milestones";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_milestones";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_milestones";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertPlayerProfileSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_player_profiles";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    userId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "user_id";
+        tableName: "eos_player_profiles";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    playerName: import("drizzle-orm/pg-core").PgColumn<{
+        name: "player_name";
+        tableName: "eos_player_profiles";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 100;
+    }>;
+    preferredThemeId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "preferred_theme_id";
+        tableName: "eos_player_profiles";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    totalPoints: import("drizzle-orm/pg-core").PgColumn<{
+        name: "total_points";
+        tableName: "eos_player_profiles";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    level: import("drizzle-orm/pg-core").PgColumn<{
+        name: "level";
+        tableName: "eos_player_profiles";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    currentStreak: import("drizzle-orm/pg-core").PgColumn<{
+        name: "current_streak";
+        tableName: "eos_player_profiles";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    longestStreak: import("drizzle-orm/pg-core").PgColumn<{
+        name: "longest_streak";
+        tableName: "eos_player_profiles";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    totalMissionsCompleted: import("drizzle-orm/pg-core").PgColumn<{
+        name: "total_missions_completed";
+        tableName: "eos_player_profiles";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    totalMilestonesCompleted: import("drizzle-orm/pg-core").PgColumn<{
+        name: "total_milestones_completed";
+        tableName: "eos_player_profiles";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    averageCompletionTime: import("drizzle-orm/pg-core").PgColumn<{
+        name: "average_completion_time";
+        tableName: "eos_player_profiles";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    preferredRewardTypes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "preferred_reward_types";
+        tableName: "eos_player_profiles";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    gamificationSettings: import("drizzle-orm/pg-core").PgColumn<{
+        name: "gamification_settings";
+        tableName: "eos_player_profiles";
+        dataType: "json";
+        columnType: "PgJson";
+        data: {
+            showLeaderboard: boolean;
+            enableNotifications: boolean;
+            showProgressBadges: boolean;
+            enableCompetitiveMode: boolean;
+        };
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: {
+            showLeaderboard: boolean;
+            enableNotifications: boolean;
+            showProgressBadges: boolean;
+            enableCompetitiveMode: boolean;
+        };
+    }>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_player_profiles";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_player_profiles";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertPersonalRewardSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_personal_rewards";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    playerId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "player_id";
+        tableName: "eos_personal_rewards";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    rewardTypeId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "reward_type_id";
+        tableName: "eos_personal_rewards";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    customValue: import("drizzle-orm/pg-core").PgColumn<{
+        name: "custom_value";
+        tableName: "eos_personal_rewards";
+        dataType: "string";
+        columnType: "PgNumeric";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    customDescription: import("drizzle-orm/pg-core").PgColumn<{
+        name: "custom_description";
+        tableName: "eos_personal_rewards";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    pointsCost: import("drizzle-orm/pg-core").PgColumn<{
+        name: "points_cost";
+        tableName: "eos_personal_rewards";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    isActive: import("drizzle-orm/pg-core").PgColumn<{
+        name: "is_active";
+        tableName: "eos_personal_rewards";
+        dataType: "boolean";
+        columnType: "PgBoolean";
+        data: boolean;
+        driverParam: boolean;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    preferenceRanking: import("drizzle-orm/pg-core").PgColumn<{
+        name: "preference_ranking";
+        tableName: "eos_personal_rewards";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_personal_rewards";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_personal_rewards";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertWeeklyTaskSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    person: import("drizzle-orm/pg-core").PgColumn<{
+        name: "person";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    weekEnding: import("drizzle-orm/pg-core").PgColumn<{
+        name: "week_ending";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgDateString";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    title: import("drizzle-orm/pg-core").PgColumn<{
+        name: "title";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    description: import("drizzle-orm/pg-core").PgColumn<{
+        name: "description";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    priority: import("drizzle-orm/pg-core").PgColumn<{
+        name: "priority";
+        tableName: "eos_weekly_tasks";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    estimatedTotalTime: import("drizzle-orm/pg-core").PgColumn<{
+        name: "estimated_total_time";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 50;
+    }>;
+    expectedImpact: import("drizzle-orm/pg-core").PgColumn<{
+        name: "expected_impact";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    dailyBreakdown: import("drizzle-orm/pg-core").PgColumn<{
+        name: "daily_breakdown";
+        tableName: "eos_weekly_tasks";
+        dataType: "json";
+        columnType: "PgJson";
+        data: string[];
+        driverParam: unknown;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        $type: string[];
+    }>;
+    successCriteria: import("drizzle-orm/pg-core").PgColumn<{
+        name: "success_criteria";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    status: import("drizzle-orm/pg-core").PgColumn<{
+        name: "status";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    completedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "completed_at";
+        tableName: "eos_weekly_tasks";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    actualTimeSpent: import("drizzle-orm/pg-core").PgColumn<{
+        name: "actual_time_spent";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 50;
+    }>;
+    impactAchieved: import("drizzle-orm/pg-core").PgColumn<{
+        name: "impact_achieved";
+        tableName: "eos_weekly_tasks";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_weekly_tasks";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_weekly_tasks";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
+export declare const insertDailyTaskSchema: import("drizzle-zod").BuildSchema<"insert", {
+    id: import("drizzle-orm/pg-core").PgColumn<{
+        name: "id";
+        tableName: "eos_daily_tasks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: true;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    weeklyTaskId: import("drizzle-orm/pg-core").PgColumn<{
+        name: "weekly_task_id";
+        tableName: "eos_daily_tasks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    person: import("drizzle-orm/pg-core").PgColumn<{
+        name: "person";
+        tableName: "eos_daily_tasks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: number;
+    }>;
+    date: import("drizzle-orm/pg-core").PgColumn<{
+        name: "date";
+        tableName: "eos_daily_tasks";
+        dataType: "string";
+        columnType: "PgDateString";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    title: import("drizzle-orm/pg-core").PgColumn<{
+        name: "title";
+        tableName: "eos_daily_tasks";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    description: import("drizzle-orm/pg-core").PgColumn<{
+        name: "description";
+        tableName: "eos_daily_tasks";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    estimatedMinutes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "estimated_minutes";
+        tableName: "eos_daily_tasks";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    actualMinutes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "actual_minutes";
+        tableName: "eos_daily_tasks";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    energyLevel: import("drizzle-orm/pg-core").PgColumn<{
+        name: "energy_level";
+        tableName: "eos_daily_tasks";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    priority: import("drizzle-orm/pg-core").PgColumn<{
+        name: "priority";
+        tableName: "eos_daily_tasks";
+        dataType: "number";
+        columnType: "PgInteger";
+        data: number;
+        driverParam: string | number;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    status: import("drizzle-orm/pg-core").PgColumn<{
+        name: "status";
+        tableName: "eos_daily_tasks";
+        dataType: "string";
+        columnType: "PgVarchar";
+        data: string;
+        driverParam: string;
+        notNull: true;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {
+        length: 20;
+    }>;
+    completedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "completed_at";
+        tableName: "eos_daily_tasks";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    notes: import("drizzle-orm/pg-core").PgColumn<{
+        name: "notes";
+        tableName: "eos_daily_tasks";
+        dataType: "string";
+        columnType: "PgText";
+        data: string;
+        driverParam: string;
+        notNull: false;
+        hasDefault: false;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: [string, ...string[]];
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    createdAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "created_at";
+        tableName: "eos_daily_tasks";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+    updatedAt: import("drizzle-orm/pg-core").PgColumn<{
+        name: "updated_at";
+        tableName: "eos_daily_tasks";
+        dataType: "date";
+        columnType: "PgTimestamp";
+        data: Date;
+        driverParam: string;
+        notNull: false;
+        hasDefault: true;
+        isPrimaryKey: false;
+        isAutoincrement: false;
+        hasRuntimeDefault: false;
+        enumValues: undefined;
+        baseColumn: never;
+        identity: undefined;
+        generated: undefined;
+    }, {}, {}>;
+}, undefined>;
 export type Vision = typeof vision.$inferSelect;
 export type InsertVision = typeof vision.$inferInsert;
 export type Seat = typeof seats.$inferSelect;

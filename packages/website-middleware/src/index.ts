@@ -6,10 +6,10 @@
 
 import { drizzle } from 'drizzle-orm/neon-http';
 import { neon } from '@neondatabase/serverless';
-import * as schema from './schema.js';
+import * as schema from './schema';
 
 // Export all schemas
-export * from './schema.js';
+export * from './schema';
 
 /**
  * Create website database connection with correct ES module + Neon HTTP configuration

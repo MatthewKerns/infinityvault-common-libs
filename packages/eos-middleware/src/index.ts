@@ -4,18 +4,27 @@
  * EOS-specific schemas and middleware
  */
 
+import { drizzle } from 'drizzle-orm/postgres-js';
+import postgres from 'postgres';
+import * as schema from './schema';
+
 // Export all schemas
 export * from './schema';
 
-// Export database connection helper
-import { createDatabaseConnection, resolveDatabaseUrl } from '@infinityvault/shared-infrastructure';
-import * as schema from './schema';
+/**
+ * Create EOS database connection
+ */
+export async function createEOSDatabase() {
+  const connectionString = process.env.DATABASE_URL_EOS;
+  if (!connectionString) {
+    throw new Error('DATABASE_URL_EOS environment variable is required');
+  }
 
-export function createEOSDatabase() {
-  const url = resolveDatabaseUrl('eos');
-  return createDatabaseConnection({
-    connectionString: url,
-    schema,
-    logger: process.env.NODE_ENV === 'development'
-  });
+  // Create postgres connection
+  const sql = postgres(connectionString);
+  const db = drizzle(sql, { schema });
+
+  console.log('✅ EOS database connected with postgres adapter');
+
+  return { db, sql };
 }
