@@ -1,0 +1,25 @@
+{
+  "name": "@infinityvault/eos-middleware",
+  "version": "1.0.0",
+  "description": "EOS-specific middleware and schemas",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@infinityvault/shared-infrastructure": "file:../shared-infrastructure",
+    "drizzle-orm": "^0.39.1",
+    "drizzle-zod": "^0.7.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "drizzle-kit": "^0.30.4",
+    "typescript": "^5.6.3",
+    "jest": "^29.7.0"
+  }
+}
