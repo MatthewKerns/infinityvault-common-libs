@@ -45,7 +45,24 @@ import crypto from "crypto";
 const AuthRepository = null as any;
 const UserRepository = null as any;
 const UserService = null as any;
-const config = { appUrl: process.env.APP_URL || 'http://localhost:3000' };
+const config = {
+  appUrl: process.env.APP_URL || 'http://localhost:3000',
+  oauth: {
+    scopes: ['profile', 'email'],
+    stateSecret: process.env.OAUTH_STATE_SECRET || 'dev-state-secret'
+  },
+  cookie: {
+    name: 'session',
+    options: {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'strict' as const
+    }
+  },
+  urls: {
+    frontend: process.env.FRONTEND_URL || 'http://localhost:3001'
+  }
+};
 import type { User, AuthSession, NewAuthSession } from '@infinityvault/website-middleware';
 
 interface StateParams {
@@ -61,9 +78,9 @@ interface StateParams {
  */
 export class AuthService {
   private oauth2Client: OAuth2Client;
-  private authRepository: AuthRepository;
-  private userRepository: UserRepository;
-  private userService: UserService;
+  private authRepository: typeof AuthRepository;
+  private userRepository: typeof UserRepository;
+  private userService: typeof UserService;
 
   constructor() {
     console.warn('⚠️ AuthService is DEPRECATED. Use @infinityvault/shared-auth components instead.');
@@ -178,7 +195,7 @@ export class AuthService {
   async handleOAuthCallback(code: string, stateData: any, req: any): Promise<{ user: User; session: AuthSession }> {
     console.warn('⚠️ AuthService.handleOAuthCallback is DEPRECATED. Use GoogleOAuthService.handleCallback instead.');
     const tokens = await this.exchangeCodeForTokens(code);
-    const userInfo = await this.getUserInfo(tokens.access_token);
+    const userInfo = await this.getUserInfo(tokens.access_token || '');
     const user = await this.userService.findOrCreateUser(userInfo);
 
     // Create session using repository

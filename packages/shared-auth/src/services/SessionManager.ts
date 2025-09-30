@@ -35,7 +35,7 @@ export class SessionManager {
    */
   async createSession(
     userId: string,
-    options: SessionOptions = {},
+    options: SessionOptions = { rememberMe: false, isGoogleAuth: false, extendedSession: false },
     context: {
       ipAddress?: string;
       userAgent?: string;
@@ -386,13 +386,13 @@ export class SessionManager {
    */
   async revokeAllUserSessions(
     userId: string,
-    excludeSessionToken?: string,
     context: {
       ipAddress?: string;
       userAgent?: string;
       requestId?: string;
       reason?: string;
-    }
+    },
+    excludeSessionToken?: string
   ): Promise<{
     revokedCount: number;
   }> {
@@ -572,5 +572,3 @@ export class SessionManager {
     }
   }
 }
-
-export { SessionManager };

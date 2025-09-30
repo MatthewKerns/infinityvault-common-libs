@@ -11,9 +11,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@infinityvault/shared-infrastructure": "file:../shared-infrastructure",
     "drizzle-orm": "^0.39.1",
     "drizzle-zod": "^0.7.0",
+    "postgres": "^3.4.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {

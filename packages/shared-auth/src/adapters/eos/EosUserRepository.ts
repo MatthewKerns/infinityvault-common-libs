@@ -369,7 +369,7 @@ export class EosUserRepository extends AbstractRepository implements IUserReposi
         .from(eosUsers)
         .where(or(...ids.map(id => eq(eosUsers.id, id))));
 
-      return result.map(user => this.mapEosUserToBaseUser(user));
+      return result.map((user: any) => this.mapEosUserToBaseUser(user));
 
     } catch (error) {
       console.error('Error finding EOS users by IDs:', error);
@@ -418,7 +418,7 @@ export class EosUserRepository extends AbstractRepository implements IUserReposi
         .orderBy(desc(eosUsers.lastLoginAt))
         .limit(limit);
 
-      return result.map(user => this.mapEosUserToBaseUser(user));
+      return result.map((user: any) => this.mapEosUserToBaseUser(user));
 
     } catch (error) {
       console.error('Error finding active EOS users:', error);
@@ -440,7 +440,7 @@ export class EosUserRepository extends AbstractRepository implements IUserReposi
         .where(eq(eosUsers.organizationRole, organizationRole))
         .orderBy(asc(eosUsers.createdAt));
 
-      return result.map(user => this.mapEosUserToBaseUser(user));
+      return result.map((user: any) => this.mapEosUserToBaseUser(user));
 
     } catch (error) {
       console.error('Error finding EOS users by role:', error);
@@ -461,7 +461,7 @@ export class EosUserRepository extends AbstractRepository implements IUserReposi
         .where(eq(eosUsers.email, query))
         .limit(limit);
 
-      return result.map(user => this.mapEosUserToBaseUser(user));
+      return result.map((user: any) => this.mapEosUserToBaseUser(user));
 
     } catch (error) {
       console.error('Error searching EOS users:', error);
@@ -526,7 +526,7 @@ export class EosUserRepository extends AbstractRepository implements IUserReposi
         .where(eq(eosUsers.organizationRole, organizationRole))
         .orderBy(asc(eosUsers.createdAt));
 
-      return result.map(user => this.mapEosUserToBaseUser(user));
+      return result.map((user: any) => this.mapEosUserToBaseUser(user));
 
     } catch (error) {
       console.error('Error finding users by organization role:', error);

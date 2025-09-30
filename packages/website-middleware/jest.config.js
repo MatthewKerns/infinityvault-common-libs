@@ -13,7 +13,7 @@ export default createJestConfig({
     "!src/**/*.d.ts",
     "!src/**/*.test.ts"
   ],
-  moduleNameMapping: {
+  moduleNameMapper: {
     "^@infinityvault/shared-infrastructure$": "<rootDir>/../shared-infrastructure/src/index.ts"
   }
 });

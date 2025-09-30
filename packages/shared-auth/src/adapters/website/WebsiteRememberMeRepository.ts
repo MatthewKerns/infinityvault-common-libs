@@ -182,7 +182,7 @@ export class WebsiteRememberMeRepository extends AbstractRepository implements I
         .where(eq(rememberMeTokens.userId, userId))
         .orderBy(desc(rememberMeTokens.createdAt));
 
-      return result.map(token => this.mapWebsiteTokenToRememberMeToken(token));
+      return result.map((token: any) => this.mapWebsiteTokenToRememberMeToken(token));
 
     } catch (error) {
       console.error('Error finding remember me tokens by user ID:', error);
@@ -420,7 +420,7 @@ export class WebsiteRememberMeRepository extends AbstractRepository implements I
 
       // Invalidate excess tokens (oldest ones)
       const tokensToRemove = tokens.slice(0, tokens.length - maxTokens);
-      const tokenHashesToRemove = tokensToRemove.map(token => token.tokenHash);
+      const tokenHashesToRemove = tokensToRemove.map((token: any) => token.tokenHash);
 
       if (tokenHashesToRemove.length > 0) {
         await this.db
@@ -432,7 +432,7 @@ export class WebsiteRememberMeRepository extends AbstractRepository implements I
           .where(
             and(
               eq(rememberMeTokens.userId, userId),
-              or(...tokenHashesToRemove.map(hash => eq(rememberMeTokens.tokenHash, hash)))
+              or(...tokenHashesToRemove.map((hash: any) => eq(rememberMeTokens.tokenHash, hash)))
             )
           );
       }

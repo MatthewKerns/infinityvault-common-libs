@@ -151,7 +151,7 @@ export class WebsiteSessionRepository extends AbstractRepository implements ISes
         .where(eq(authSessions.userId, userId))
         .orderBy(desc(authSessions.createdAt));
 
-      return result.map(session => this.mapWebsiteSessionToAuthSession(session));
+      return result.map((session: any) => this.mapWebsiteSessionToAuthSession(session));
 
     } catch (error) {
       console.error('Error finding sessions by user ID:', error);
@@ -300,7 +300,7 @@ export class WebsiteSessionRepository extends AbstractRepository implements ISes
         .where(gt(authSessions.expiresAt, now))
         .orderBy(desc(authSessions.createdAt));
 
-      return result.map(session => this.mapWebsiteSessionToAuthSession(session));
+      return result.map((session: any) => this.mapWebsiteSessionToAuthSession(session));
 
     } catch (error) {
       console.error('Error getting active sessions:', error);
@@ -439,7 +439,7 @@ export class WebsiteSessionRepository extends AbstractRepository implements ISes
         )
         .orderBy(desc(authSessions.createdAt));
 
-      return result.map(session => this.mapWebsiteSessionToAuthSession(session));
+      return result.map((session: any) => this.mapWebsiteSessionToAuthSession(session));
 
     } catch (error) {
       console.error('Error finding sessions by IP address:', error);

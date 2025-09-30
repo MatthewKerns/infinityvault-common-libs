@@ -343,7 +343,7 @@ export class WebsiteUserRepository extends AbstractRepository implements IUserRe
         .from(users)
         .where(or(...ids.map(id => eq(users.id, id))));
 
-      return result.map(user => this.mapWebsiteUserToBaseUser(user));
+      return result.map((user: any) => this.mapWebsiteUserToBaseUser(user));
 
     } catch (error) {
       console.error('Error finding users by IDs:', error);
@@ -392,7 +392,7 @@ export class WebsiteUserRepository extends AbstractRepository implements IUserRe
         .orderBy(desc(users.lastLoginAt))
         .limit(limit);
 
-      return result.map(user => this.mapWebsiteUserToBaseUser(user));
+      return result.map((user: any) => this.mapWebsiteUserToBaseUser(user));
 
     } catch (error) {
       console.error('Error finding active users:', error);
@@ -412,7 +412,7 @@ export class WebsiteUserRepository extends AbstractRepository implements IUserRe
         .where(eq(users.role, role))
         .orderBy(asc(users.createdAt));
 
-      return result.map(user => this.mapWebsiteUserToBaseUser(user));
+      return result.map((user: any) => this.mapWebsiteUserToBaseUser(user));
 
     } catch (error) {
       console.error('Error finding users by role:', error);
@@ -441,7 +441,7 @@ export class WebsiteUserRepository extends AbstractRepository implements IUserRe
         )
         .limit(limit);
 
-      return result.map(user => this.mapWebsiteUserToBaseUser(user));
+      return result.map((user: any) => this.mapWebsiteUserToBaseUser(user));
 
     } catch (error) {
       console.error('Error searching users:', error);

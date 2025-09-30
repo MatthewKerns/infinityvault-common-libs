@@ -26,7 +26,6 @@ interface ChatMessageProps {
 
 export const ChatMessage: React.FC<ChatMessageProps> = ({ message, isStreaming, DocumentIntelligenceDisplay }) => {
   const isUser = message.role === 'user';
-  const isAssistant = message.role === 'assistant';
 
   const getContextIcon = (context?: string) => {
     switch (context) {

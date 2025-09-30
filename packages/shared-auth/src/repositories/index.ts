@@ -254,7 +254,9 @@ export abstract class AbstractRepository implements BaseRepository {
   }
 }
 
-// Repository errors
+// Repository-specific errors - extend base errors from types
+import { NotFoundError, ConflictError, ValidationError } from '../types';
+
 export class RepositoryError extends Error {
   constructor(
     message: string,
@@ -266,23 +268,5 @@ export class RepositoryError extends Error {
   }
 }
 
-export class NotFoundError extends RepositoryError {
-  constructor(resource: string, identifier: string) {
-    super(`${resource} not found: ${identifier}`, 'find');
-    this.name = 'NotFoundError';
-  }
-}
-
-export class ConflictError extends RepositoryError {
-  constructor(resource: string, field: string, value: string) {
-    super(`${resource} already exists with ${field}: ${value}`, 'create');
-    this.name = 'ConflictError';
-  }
-}
-
-export class ValidationError extends RepositoryError {
-  constructor(field: string, value: any, requirement: string) {
-    super(`Invalid ${field}: ${value}. ${requirement}`, 'validate');
-    this.name = 'ValidationError';
-  }
-}
+// Re-export the base error types for convenience
+export { NotFoundError, ConflictError, ValidationError };

@@ -85,7 +85,6 @@ export interface AuthResult<T = BaseUser> {
 
 // Session validation result
 export interface SessionValidationResult {
-  success: boolean;
   isValid: boolean;
   user?: BaseUser;
   session?: AuthSession;

@@ -309,8 +309,7 @@ export class RememberMeService {
         expiresAt,
         ipAddress: context.ipAddress,
         userAgent: context.userAgent,
-        lastUsedAt: new Date(),
-        updatedAt: new Date()
+        lastUsedAt: new Date()
       });
 
       // Log token rotation
@@ -598,4 +597,4 @@ export class RememberMeService {
   }
 }
 
-export { RememberMeService };
+// RememberMeService is already exported above with 'export class' declaration

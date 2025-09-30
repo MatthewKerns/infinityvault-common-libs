@@ -182,7 +182,8 @@ export class AuthCore {
         // Create session
         const session = await this.createSession(user.id, {
           rememberMe: request.rememberMe,
-          isGoogleAuth: false
+          isGoogleAuth: false,
+          extendedSession: false
         }, context);
 
         // Update last login
@@ -368,7 +369,7 @@ export class AuthCore {
   ): Promise<{ token: string; dbToken: RememberMeToken }> {
     const { token, hash, series } = SessionSecurity.generateRememberMeToken();
     const expiresAt = new Date();
-    expiresAt.setDate(expiresAt.getDate() + this.config.rememberMe.enabled ? this.config.session.rememberMeExpiryDays : 30);
+    expiresAt.setDate(expiresAt.getDate() + (this.config.rememberMe.enabled ? this.config.session.rememberMeExpiryDays : 30));
 
     // Clean up excess tokens for user
     const currentTokenCount = await this.repositories.rememberMe.getUserTokenCount(userId);
@@ -436,7 +437,8 @@ export class AuthCore {
         // Create new session
         const session = await this.createSession(user.id, {
           rememberMe: true,
-          isGoogleAuth: false
+          isGoogleAuth: false,
+          extendedSession: false
         }, context);
 
         // Rotate remember me token if configured
@@ -664,5 +666,4 @@ export class AuthCore {
   }
 }
 
-// Export main class
-export { AuthCore };
+// AuthCore is already exported above with 'export class' declaration

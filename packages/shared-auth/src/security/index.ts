@@ -600,11 +600,4 @@ export class SecurityValidator {
   }
 }
 
-// Export utility classes
-export {
-  PKCEUtil,
-  OAuthStateManager,
-  RateLimiter,
-  PasswordSecurity,
-  SessionSecurity
-};
+// Classes are already exported above with 'export class' declarations

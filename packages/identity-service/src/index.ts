@@ -304,13 +304,13 @@ export class UserIdentityService {
   }
 
   private generateAccessToken(payload: TokenPayload): string {
-    return jwt.sign(payload, this.jwtSecret, {
+    return jwt.sign(payload as object, this.jwtSecret, {
       expiresIn: this.tokenExpiry
     });
   }
 
   private generateRefreshToken(payload: TokenPayload): string {
-    return jwt.sign(payload, this.jwtRefreshSecret, {
+    return jwt.sign(payload as object, this.jwtRefreshSecret, {
       expiresIn: this.refreshTokenExpiry
     });
   }

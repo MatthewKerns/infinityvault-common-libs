@@ -167,7 +167,8 @@ export class GoogleOAuthService {
         user.id,
         {
           rememberMe: stateData.rememberMe || true, // Auto-enable for OAuth
-          isGoogleAuth: true
+          isGoogleAuth: true,
+          extendedSession: false
         },
         context
       );
@@ -382,7 +383,7 @@ export class GoogleOAuthService {
       return {
         accessToken: credentials.access_token,
         expiresIn: credentials.expiry_date ? Math.floor((credentials.expiry_date - Date.now()) / 1000) : 3600,
-        newRefreshToken: credentials.refresh_token
+        newRefreshToken: credentials.refresh_token || undefined
       };
 
     } catch (error) {
@@ -544,4 +545,4 @@ export function createGoogleOAuthService(
   return service;
 }
 
-export { GoogleOAuthService };
+// GoogleOAuthService is already exported above with 'export class' declaration
