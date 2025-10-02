@@ -1,7 +1,8 @@
-import twilio from 'twilio';
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type TwilioClient = any;
 
 export class SMSService {
-  private client: twilio.Twilio | null = null;
+  private client: TwilioClient | null = null;
   private verifyServiceSid: string | null = null;
   private readonly isEnabled: boolean;
 
@@ -14,7 +15,9 @@ export class SMSService {
     );
 
     if (this.isEnabled) {
-      this.client = twilio(
+      // Dynamically import twilio only when needed
+      const twilioModule = require('twilio');
+      this.client = twilioModule(
         process.env.TWILIO_ACCOUNT_SID!,
         process.env.TWILIO_AUTH_TOKEN!
       );

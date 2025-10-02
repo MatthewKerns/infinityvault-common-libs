@@ -59,7 +59,11 @@ export class GoogleAuthService {
     id_token?: string;
   }> {
     const { tokens } = await this.oauth2Client.getToken(code);
-    return tokens;
+    return {
+      access_token: tokens.access_token ?? undefined,
+      refresh_token: tokens.refresh_token ?? undefined,
+      id_token: tokens.id_token ?? undefined
+    };
   }
 
   /**

@@ -252,7 +252,7 @@ export class GoogleOAuthService {
         throw new Error(`Google API request failed: ${response.status} ${response.statusText}`);
       }
 
-      const userInfo = await response.json();
+      const userInfo = await response.json() as GoogleUserInfo;
 
       // Validate required fields
       if (!userInfo.email || !userInfo.id) {
@@ -424,7 +424,7 @@ export class GoogleOAuthService {
         return { isValid: false };
       }
 
-      const tokenInfo = await tokenInfoResponse.json();
+      const tokenInfo = await tokenInfoResponse.json() as { expires_in?: number };
 
       return {
         isValid: true,

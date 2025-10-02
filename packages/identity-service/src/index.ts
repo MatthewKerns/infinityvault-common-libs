@@ -304,15 +304,15 @@ export class UserIdentityService {
   }
 
   private generateAccessToken(payload: TokenPayload): string {
-    return jwt.sign(payload as object, this.jwtSecret, {
+    return jwt.sign(payload, this.jwtSecret, {
       expiresIn: this.tokenExpiry
-    });
+    } as jwt.SignOptions);
   }
 
   private generateRefreshToken(payload: TokenPayload): string {
-    return jwt.sign(payload as object, this.jwtRefreshSecret, {
+    return jwt.sign(payload, this.jwtRefreshSecret, {
       expiresIn: this.refreshTokenExpiry
-    });
+    } as jwt.SignOptions);
   }
 
   /**
